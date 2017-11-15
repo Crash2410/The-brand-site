@@ -1,0 +1,69 @@
+@import "fonts";
+@import "libs";  // bootsrap пока не используем, используем сброс normalize.css
+@import "vars";
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	&:before, &:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+
+*::-webkit-input-placeholder {
+	color: $input-color-placeholder;
+	opacity: 1;
+}
+
+*:-moz-placeholder {
+	color: $input-color-placeholder;
+	opacity: 1;
+}
+
+*::-moz-placeholder {
+	color: $input-color-placeholder;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: $input-color-placeholder;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: $input-color-placeholder;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+	color: $input-color-placeholder;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: $font-size-base;
+	min-width: 320px;
+	position: relative;
+	line-height: $line-height-base;
+	font-family: $font-family-sans-serif;
+	overflow-x: hidden;
+	opacity: 1;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+// Header
+
+
+@import "media"; // Всегда в конце
