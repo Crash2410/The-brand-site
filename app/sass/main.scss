@@ -1,5 +1,5 @@
 @import "fonts";
-@import "libs";  // bootsrap пока не используем, используем сброс normalize.css
+@import "libs";
 @import "vars";
 
 * {
@@ -63,7 +63,221 @@ body {
 	height: auto;
 }
 
+// Button all on page
+.button {
+    display: inline-block;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    background-color: $accent;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    outline: none;
+    transition: background-color .1s ease;
+
+    &:focus, &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &:hover {
+        background-color: lighten($accent, 5%);
+        &::after {
+            opacity: .22;
+        }
+    }
+
+    &:active {
+        background-color: darken($accent, 5%);
+        &::after {
+            opacity: .32;
+        }
+	}
+}
+
+
+// Main container
+.container {
+	margin: 0 auto;
+	width: 1600px;
+	padding: 0;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+}
+
+.logo-image {
+	width: 59px;
+	height: auto;
+}
+
 // Header
+.header {
+	border: solid 1px #ececec;
+	max-width: 100%;
+
+	&-top {
+		max-width: 1140px;
+		height: 100px;
+		margin: 0 auto;
+		display: block;
+
+	// Image Logo
+		&-logo {
+			display: inline-block;
+			vertical-align: middle;
+			margin-top: 0;
+			margin-right: 13px;
+		}
+
+		&-name {
+			font-family: Lato;
+			color:  #222;
+			font-size: 27px;
+			font-weight: 200;
+			line-height: 32px;
+			text-align: left;
+			text-transform: uppercase;
+			display: inline-block;
+			vertical-align: middle;
+			height: 100%;
+			padding-top: 36px;
+			padding-bottom: 36px;
+			margin-right: 37px;
+
+				&-accent {
+					color:  #f16d7f;
+					font-weight: 900;
+				}
+		}
+
+		&-form {
+			display: inline-block;
+			vertical-align: middle;
+			width: auto;
+			height: 100%;
+			padding: 31px 0;
+		}
+	}
+}
+
+.search-form {
+	width: auto;
+	height: 38px;
+	display: inline-block;
+
+	&-inputgroup {
+		display: table;
+		position: relative;
+		border-collapse: separate;
+	}
+
+	&-dropdown-menu {
+		display: table-cell;
+		list-style: none;
+		border-bottom-left-radius: 3px;
+		border-top-left-radius: 3px;
+		border: 1px solid $panel-default-border;
+		background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+		width: 87px;
+		height: 100%;
+		padding-left: 12px;
+		padding-right: 0;
+		vertical-align: middle;
+		transition: background-color .1s ease;
+
+		&:hover, &:focus {
+			color: lighten(#222, 20%);
+			background-color: daker(#222, 20%);
+			cursor: pointer;
+		}
+
+		&:first-child {
+			border-right: 0;
+		}
+
+		li {
+				position: relative;
+				text-align: center;
+
+				a {
+					display: block;
+					color: #222;
+					text-decoration: none;
+				}
+
+				.fa.fa-caret-down {
+					color: #838383;
+					font-size: 14px;
+					font-weight: 400;
+					margin: 0;
+					padding-left: 4px;
+					padding-right: 8px;
+				}
+			}
+	}
+
+	&-control {
+		display: table-cell;
+		border: 1px solid $panel-default-border;
+		padding-top: 11px;
+		padding-bottom: 11px;
+		height: 100%;
+		padding-left: 16px;
+		vertical-align: middle;
+	}
+
+	&-sign {
+		display: table-cell;
+		width: 38px;
+		height: 38px;
+		border: 1px solid $panel-default-border;
+		border-left: 0;
+		background-color: #FFF;
+		vertical-align: middle;
+
+		.fa.fa-search {
+		    color:  #a4a4a4;
+		    font-size: 14px;
+		    font-weight: 400;
+		    line-height: 32px;
+		    text-align: center;
+		    padding-left: 11px;
+		}
+	}
+}
+
+.header-login {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 0;
+	margin-left: 349px;
+
+		img {
+			width: 32px;
+			height: 29px;
+		}
+
+	.header-login-button-menu {
+		list-style: none;
+		padding: 0;
+		display: inline-block;
+		margin-left: 26px;
+	}
+		.btn-account {
+		    padding: 12px 0;
+	    	font-size: 15px;
+	    	width: 130px;
+
+			.fa.fa-caret-down {
+				color: #fff;
+				font-size: 14px;
+				font-weight: 400;
+				margin: 0;
+				padding-left: 6px;
+				padding-right: 0px;
+			}
+		}
+}
 
 
 @import "media"; // Всегда в конце

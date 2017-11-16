@@ -10,14 +10,15 @@ $panel-inner-border: #e6e6e6;
 
 // Brands
 $brand-primary: #f16d7f;
+$accent: $brand-primary;
 $brand-info: #8eb4cb;
 $brand-success: #2ab27b;
 $brand-warning: #cbb956;
 $brand-danger: #bf5329;
 
 // Typography
-$icon-font-path: "../fonts/Fontawesome/";
-$font-family-sans-serif: "LatoLatinRegular", sans-serif;
+@fa-font-path: "../fonts/Fontawesome/";
+$font-family-sans-serif: "Lato", sans-serif;
 $font-size-base: 14px;
 $line-height-base: 1.5;
 $text-color: #9f9f9f;
