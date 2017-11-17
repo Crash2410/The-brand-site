@@ -63,6 +63,19 @@ body {
 	height: auto;
 }
 
+// Main container
+.container {
+	width: 1600px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.brand-content {
+	width: 1140px;
+	margin: 0 auto;
+	padding: 0;
+}
+
 // Button all on page
 .button {
     display: inline-block;
@@ -95,16 +108,7 @@ body {
         }
 	}
 }
-
-
-// Main container
-.container {
-	margin: 0 auto;
-	width: 1600px;
-	padding: 0;
-	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
-}
-
+// Logo image
 .logo-image {
 	width: 59px;
 	height: auto;
@@ -113,7 +117,7 @@ body {
 // Header
 .header {
 	border: solid 1px #ececec;
-	max-width: 100%;
+	width: 100%;
 
 	&-top {
 		width: 1140px;
@@ -133,7 +137,7 @@ body {
 			font-family: Lato;
 			color:  #222;
 			font-size: 27px;
-			font-weight: 200;
+			font-weight: 300;
 			line-height: 32px;
 			text-align: left;
 			text-transform: uppercase;
@@ -184,6 +188,7 @@ body {
 		padding-right: 0;
 		vertical-align: middle;
 		transition: background-color .1s ease;
+		transition: color .1s ease;
 
 		&:hover, &:focus {
 			color: lighten(#222, 20%);
@@ -278,6 +283,23 @@ body {
 			}
 		}
 }
+// Navigation menu (main)
+.brand-border-left-right {
+	border-left: solid 1px #ececec;
+	border-right: solid 1px #ececec;
+}
 
+.brand-nav {
+	list-style: none;
+	display: block;
+	padding: 0;
+	margin: 20.5px 16%;
+}
+
+.brand-nav-item {
+	display: inline-block;
+	text-transform: uppercase;
+	margin-right: 48px;
+}
 
 @import "media"; // Всегда в конце
