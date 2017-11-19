@@ -3532,47 +3532,91 @@ body {
   font-size: 30px;
   font-weight: 900; }
 
-.brand-products {
+.products-content {
+  width: 1410px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative; }
+
+.products-header {
   width: 100%;
   height: 400px;
   margin-top: 100px;
   height: auto; }
 
-.brand-products-h1 {
+.products-header__title {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 0; }
 
-.brand-products-p {
+.products-header__text {
   color: #9f9f9f;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
   margin-bottom: 60px; }
 
-.brand-products-grid {
+.products-grid {
   display: inline-block; }
 
-.brand-products-grid-item {
+.product {
   width: 261px;
   height: auto;
   display: inline-block;
   vertical-align: top;
   margin: 60px 32px;
-  text-align: left; }
+  text-align: left;
+  position: relative;
+  z-index: 10; }
 
-.product-img {
-  width: auto;
+.product__item {
+  width: 100%;
   height: auto; }
 
-.brand-products-title {
+.product__title {
   font-size: 13px;
-  text-transform: uppercase; }
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding-left: 1rem; }
 
-.brand-products-price {
+.product__price_accent {
+  margin-top: 17px;
   font-size: 16px;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #f16d7f;
+  padding-left: 1rem; }
+
+.product_active {
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+  width: auto;
+  height: auto;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.product__item_active {
+  background-color: #FFF;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+  .product__item_active::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/add_to_cart.png");
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    top: 35%;
+    left: -webkit-calc(50% - 61.5px);
+    left: calc(50% - 61.5px);
+    z-index: 200; }
 
 @fa-font-path : "../fonts/Fontawesome/";
 /*==========  Desktop First  ==========*/
