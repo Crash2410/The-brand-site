@@ -522,5 +522,29 @@ body {
 	}
 }
 
+.btn-product-browse {
+	background-color: $accent;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	padding: 12px 18px 12px 24px;
+	color: #fff;
+	margin-left: calc(50% - 106px);
+}
+
+.btn-product-browse__text {
+	display: inline-block;
+	padding-right: 6px;
+}
+
+.btn-product-browse__arr {
+	display: inline-block;
+}
+
+.fa-arrow-right {
+	font-size: 15px;
+	font-weight: 400;
+}
 
 @import "media"; // Всегда в конце
