@@ -21,67 +21,206 @@
 </head>
 
 <body>
+  <div class="brand-border">
     <div class="container">
         <header class="header">
             <div class="header-top">
                 <div class="header-top-logo">
                     <img src="img/brand-logo.png" alt="brand logo" class="logo-image">
-                </div><!--
-                --><div class="header-top-name">
+                </div>
+                <!--
+                -->
+                <div class="header-top-name">
                     Bran<span class="header-top-name-accent">d</span>
-                </div><!--
-                --><div class="header-top-form">
-                	<form action="handler.php" method="post" class="search-form">
-						<div class="search-form-inputgroup">
-		                    <ul class="search-form-dropdown-menu">
-		                        <li>
-		                            <a href="#" class="dropdown-toggle">
-		                            	Browse
-		                            	<span class="fa fa-caret-down"
-		                            		title="Toggle dropdown menu"></span>
-		                            </a>
-		                        </li>
-		                    </ul>
-	                        <input type="text" id="search"
-	                        	placeholder="Search for Item..."
-	                        	class="search-form-control">
-	                        <div class="search-form-sign">
-								<i class="fa fa-search"></i>
-	                        </div>
-	                    </div>
+                </div>
+                <!--
+                -->
+                <div class="header-top-form">
+                    <form action="handler.php" method="post" class="search-form">
+                        <div class="search-form-inputgroup">
+                            <ul class="search-form-dropdown-menu">
+                                <li>
+                                    <a href="#" class="dropdown-toggle">
+                                  Browse
+                                  <span class="fa fa-caret-down"
+                                    title="Toggle dropdown menu"></span>
+                                </a>
+                                </li>
+                            </ul>
+                            <input type="text" id="search" placeholder="Search for Item..." class="search-form-control">
+                            <div class="search-form-sign">
+                                <i class="fa fa-search"></i>
+                            </div>
+                        </div>
                     </form>
-                </div><!--
-                 --><div class="header-login">
-					<img src="img/basket.png">
-						<ul class="header-login-button-menu">
-	                        <li>
-	                            <a href="#" class="button btn-account">
-	                            	My Account
-	                            	<span class="fa fa-caret-down"
-	                            		title="Toggle dropdown menu"></span>
-	                            </a>
-	                        </li>
-		                </ul>
+                </div>
+                <!--
+                 -->
+                <div class="header-login">
+                    <img src="img/basket.png">
+                    <ul class="header-login-button-menu">
+                        <li>
+                            <a href="#" class="button btn-account">
+                                My Account
+                                <span class="fa fa-caret-down"
+                                  title="Toggle dropdown menu"></span>
+                              </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>
     </div>
-    <div class="container brand-border-left-right">
-        <nav class="brand-content">
-        	<ul class="brand-nav">
-        		<li class="brand-nav-item">Home</li>
-        		<li class="brand-nav-item">Man</li>
-        		<li class="brand-nav-item">Women</li>
-        		<li class="brand-nav-item">Kids</li>
-        		<li class="brand-nav-item">Accoseries</li>
-        		<li class="brand-nav-item">Featured</li>
-        		<li class="brand-nav-item">Hot Deals</li>
-        	</ul>
-        </nav>
+    <div class="container">
+        <div class="brand-content-relative">
+            <nav class="brand-nav-pos-abs">
+                <ul class="brand-nav">
+                    <li class="brand-nav-item"><a href="">Home</a></li>
+                    <li class="brand-nav-item"><a href="">Man</a></li>
+                    <li class="brand-nav-item"><a href="">Women</a></li>
+                    <li class="brand-nav-item"><a href="">Kids</a></li>
+                    <li class="brand-nav-item"><a href="">Accoseries</a></li>
+                    <li class="brand-nav-item"><a href="">Featured</a></li>
+                    <li class="brand-nav-item"><a href="">Hot Deals</a></li>
+                </ul>
+            </nav>
+            <div class="brand-slider">
+                <div class="brand-slider-image">
+                    <img src="img/slider-01.png" alt="slider image 1">
+                </div>
+                <div class="brand-slider-top-bg">
+                </div>
+            </div>
+            <div class="brand-slider-label">
+                <div class="slider-label-text-bold">The Brand</div>
+                <div class="slider-label-text-black">
+                    of Luxerious
+                    <span class="text-accent">Fashion</span>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="container">
+        <div class="brand-content-width brand-category">
+            <div class="row">
+                <div class="col-md-6 no-gutter">
+                    <div class="brand-category-img brand-category-img-left">
+                        <img src="img/item-01.jpg">
+                        <div class="category-label">
+                            <div class="category-label-black">
+                                Hot deal
+                            </div>
+                            <div class="category-label-accent">
+                                <span class="text-accent">for Man</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand-category-img-left">
+                        <img src="img/item-03.png">
+                        <div class="category-label">
+                            <div class="category-label-black">
+                                Luxirous &amp; trendy
+                            </div>
+                            <div class="category-label-accent">
+                                <span class="text-accent">
+                                  Accesories
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 no-gutter">
+                    <div class="brand-category-img brand-category-img-right">
+                        <img src="img/item-02.jpg">
+                        <div class="category-label">
+                            <div class="category-label-black">
+                                30% offers
+                            </div>
+                            <div class="category-label-accent">
+                                <span class="text-accent">
+                                  Women
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand-category-img brand-category-img-right">
+                        <img src="img/item-04.jpg">
+                        <div class="category-label">
+                            <div class="category-label-black">
+                                New arrivals
+                            </div>
+                            <div class="category-label-accent">
+                                <span class="text-accent">
+                                for kids
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container brand-content-width">
+      <div class="brand-products">
+        <div class="brand-products-h1">Featured Items</div>
+        <div class="brand-products-p">
+          Shop for items based on what we featured in this week
+        </div>
+        <div class="brand-products-grid">
+          <div class="brand-products-grid-item">
+            <img src="img/item-21.jpg" alt="items image" class="product-img">
+            <div class="brand-products-title">Mongo people t-short</div>
+             <div class="brand-products-price">
+              <span class="text-accent">
+                $53
+              </span>
+            </div>
+          </div>
+                    <div class="brand-products-grid-item">
+            <img src="img/item-21.jpg" alt="items image" class="product-img">
+            <div class="brand-products-title">Mongo people t-short</div>
+             <div class="brand-products-price">
+              <span class="text-accent">
+                $53
+              </span>
+            </div>
+          </div>
+          <div class="brand-products-grid-item">
+            <img src="img/item-21.jpg" alt="items image" class="product-img">
+            <div class="brand-products-title">Mongo people t-short</div>
+             <div class="brand-products-price">
+              <span class="text-accent">
+                $53
+              </span>
+            </div>
+          </div>
+          <div class="brand-products-grid-item">
+            <img src="img/item-21.jpg" alt="items image" class="product-img">
+            <div class="brand-products-title">Mongo people t-short</div>
+             <div class="brand-products-price">
+              <span class="text-accent">
+                $53
+              </span>
+            </div>
+          </div>
+          <div class="brand-products-grid-item">
+            <img src="img/item-21.jpg" alt="items image" class="product-img">
+            <div class="brand-products-title">Mongo people t-short</div>
+             <div class="brand-products-price">
+              <span class="text-accent">
+                $53
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
     <footer>
     </footer>
-    </div>
+</div>
     <script src="js/scripts.min.js"></script>
 </body>
 
