@@ -720,5 +720,98 @@ body {
 .feature-description__text-bottom-m {
 	margin-bottom: 50px;
 }
+// -- End `features` --
+// -- Begin `subscrib` --
+.subscribe {
+	margin-top: 97px;
+	z-index: 1;
+	position: relative;
+}
+
+.subscribe-bgc-image {
+	width: 100%;
+	height: auto;
+	z-index: 1;
+	position: relative;
+	background-color: #F8F8F8;
+	opacity: 0.7;
+	filert: alpha(Opacity=70);  // EI - opacity
+}
+.subscribe-left {
+	width: 50%;
+	// height: 100%;
+	height: 438px;
+	border-right: 1px solid #ececec;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.subscribe-bloger-image {
+	width: 83px;
+	height: auto;
+	position: absolute;
+	top: 111px;
+	left: 230px;
+	z-index: 11;
+}
+
+.subscribe-blog {
+	width: 386px;
+	position: absolute;
+	top: 114px;
+	left: 340px;
+	z-index: 11;
+	text-align: left;
+	vertical-align: top;
+	display: block;
+}
+
+.subscribe-blog__text {
+	font-family: Lato;
+	color:  rgba(34, 34, 36, 0.67);
+	font-size: 16px;
+	font-style: italic;
+	line-height: 26px;
+	text-align: left;
+}
+
+.subscribe-blog__author_accent {
+	color:  $accent;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 16px;
+	margin-top: 16px;
+	text-align: left;
+	z-index: 11;
+}
+
+.subscribe-blog__author {
+	color:  #222224;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 12px;
+	text-align: left;
+	margin-top: 2px;
+}
+
+.subscribe-blog__decor-1 {
+	width: 38px;
+	height: 4px;
+	background-color:  #d6d6d6;
+	margin-top: 36px;
+	display: inline-block;
+	margin-right: 6px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.subscribe-blog__decor-2 {
+	@extend .subscribe-blog__decor-1;
+	background-color:  $accent;
+}
+
 
 @import "media"; // Всегда в конце

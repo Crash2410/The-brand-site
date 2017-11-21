@@ -1,9 +1,0 @@
-
-    background-color:  #ffffff;
-
-// Shadow from active hove image
-    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
-
-    width: 263px;
-    height: 364px;
-
