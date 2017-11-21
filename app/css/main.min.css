@@ -3848,6 +3848,84 @@ body {
 .subscribe-blog__decor-2 {
   background-color: #f16d7f; }
 
+.subscribe-right {
+  display: block;
+  position: absolute;
+  top: 148px;
+  right: 236px;
+  z-index: 12; }
+
+.subscribe-h {
+  margin-bottom: 35px; }
+
+.subscribe-h__title {
+  color: rgba(34, 34, 36, 0.67);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.subscribe-h__text {
+  color: rgba(34, 34, 36, 0.67);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.subscribe-form {
+  max-width: 386px;
+  display: block; }
+
+.subscribe-form__input {
+  display: inline-block;
+  max-width: 282px; }
+  .subscribe-form__input input {
+    color: rgba(34, 34, 36, 0.67);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    padding-left: 28px;
+    border-width: 0;
+    -webkit-border-bottom-left-radius: 23px;
+            border-bottom-left-radius: 23px;
+    -webkit-border-top-left-radius: 23px;
+            border-top-left-radius: 23px;
+    background-color: #e1e1e1;
+    vertical-align: top; }
+
+.subscribe-form__submit-btn {
+  max-width: 104px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -3px; }
+  .subscribe-form__submit-btn button[type="submit"] {
+    padding: 0 21px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 37px;
+    text-align: center;
+    border-width: 0;
+    -webkit-border-bottom-right-radius: 23px;
+            border-bottom-right-radius: 23px;
+    -webkit-border-top-right-radius: 23px;
+            border-top-right-radius: 23px;
+    background-color: #f16d7f; }
+    .subscribe-form__submit-btn button[type="submit"]:hover {
+      background-color: #ee5167;
+      color: fff;
+      -webkit-transition: background-color 0.25s ease;
+      -o-transition: background-color 0.25s ease;
+      transition: background-color 0.25s ease; }
+    .subscribe-form__submit-btn button[type="submit"] a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      cursor: pointer; }
+
 @fa-font-path : "../fonts/Fontawesome/";
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
