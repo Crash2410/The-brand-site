@@ -1,9 +1,9 @@
 <h1>E-shop The Brand</h1>
-<p>First stage of development online store</p>
+<p>First stage of development online store.</p>
 
-<p>
+<!-- <p>
 	<img src="" alt="Preview image">
-</p>
+</p> -->
 
 <p>Author: 
 	<a href="https://github.com/kalnynsh/" target="_blank">

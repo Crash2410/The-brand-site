@@ -1,0 +1,7 @@
+  SASS ref
+darken($body-bg, 10%);
+lighten($text-color, 40%);
+
+$default-font: "LatoLatinRegular", sans-serif;
+$accent: #f16d7f;
+

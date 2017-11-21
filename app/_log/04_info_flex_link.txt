@@ -1,0 +1,11 @@
+http://css-live.ru/articles-css/svojstva-dlya-vyravnivaniya-vsego-i-ix-novye-tajny.html
+
+https://assets.adobe.com
+
+https://github.com/huijing/demos/blob/master/grids-basic/scss/styles.scss
+
+Примечание. Скачать «Рекомендации Яндекса по созданию сайтов» в PDF
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
