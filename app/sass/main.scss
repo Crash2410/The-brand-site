@@ -905,7 +905,7 @@ body {
 // -- Begin of `b-footer` --
 // `b-footer-top`
 .b-footer-top {
-	width: 1140px;
+	max-width: 1140px;
 	height: auto;
 	margin: 0 auto;
 	// display: flex;
@@ -976,10 +976,6 @@ body {
 	text-transform: uppercase;
 	margin-bottom: 45px;
 }
-// Footers 2nd column
-.column-pl {
-	// padding-left: 64px;
-}
 
 .menu-v {
 	list-style: none;
@@ -999,7 +995,128 @@ body {
 		}
 	}
 }
+// End of Top of footer
+// Start of Footer - social links
+// Move to left -15px
+.col-md-ml {
+	margin-left: -15px;
+}
 
+.b-footer-bottom {
+	background-color: #e6e6e6;
+	width: 100%;
 
+	&-content {
+		max-width: 1140px;
+		height: 80px;
+		margin: 0 auto;
+		padding-top: 31px;
+
+		&-text {
+			height: 100%;
+			padding: 0;
+			color:  #7a7a7a;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 64px;
+			text-align: left;
+		}
+	}
+}
+
+.col-socials {
+	max-with: auto;
+}
+
+.social-icon-facebook {
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background-color: #fff;
+	padding-top: 8px;
+	font-family: FontAwesome;
+	color:  #b2b2b2;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.social-icon-facebook_position {
+	margin-right: 6px;
+}
+
+.social-icon-twitter {
+	width: 32px;
+	height: 32px;
+	padding-top: 8px;
+	display: inline-block;
+	background-color: $accent;
+	color: #fff;
+	font-family: FontAwesome;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.social-icon-twitter_position {
+	margin-right: 6px;
+}
+
+.social-icon-linkedin {
+	width: 32px;
+	height: 32px;
+	padding-top: 8px;
+	display: inline-block;
+	background-color: #fff;
+	color:  #b2b2b2;
+	font-family: FontAwesome;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.social-icon-linkedin_position {
+	margin-right: 6px;
+}
+
+.social-icon-pinterest {
+	width: 32px;
+	height: 32px;
+	padding-top: 8px;
+	display: inline-block;
+	background-color: #fff;
+	color:  #b2b2b2;
+	font-family: FontAwesome;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.social-icon-pinterest_position {
+	margin-right: 6px;
+}
+
+.social-icon-google-plus {
+	width: 32px;
+	height: 32px;
+	padding-top: 8px;
+	display: inline-block;
+	background-color: #fff;
+	color:  #b2b2b2;
+	font-family: FontAwesome;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: center;
+	vertical-align: top;
+}
 
 @import "media"; // Всегда в конце

@@ -3184,7 +3184,6 @@ hr {
   overflow: visible;
   clip: auto; }
 
-@fa-font-path : "../fonts/Fontawesome/";
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -3932,7 +3931,7 @@ body {
       cursor: pointer; }
 
 .b-footer-top {
-  width: 1140px;
+  max-width: 1140px;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -4007,7 +4006,111 @@ body {
         -o-transition: color .1s ease;
         transition: color .1s ease; }
 
-@fa-font-path : "../fonts/Fontawesome/";
+.col-md-ml {
+  margin-left: -15px; }
+
+.b-footer-bottom {
+  background-color: #e6e6e6;
+  width: 100%; }
+  .b-footer-bottom-content {
+    max-width: 1140px;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 31px; }
+    .b-footer-bottom-content-text {
+      height: 100%;
+      padding: 0;
+      color: #7a7a7a;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 64px;
+      text-align: left; }
+
+.col-socials {
+  max-with: auto; }
+
+.social-icon-facebook {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-color: #fff;
+  padding-top: 8px;
+  font-family: FontAwesome;
+  color: #b2b2b2;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  vertical-align: top; }
+
+.social-icon-facebook_position {
+  margin-right: 6px; }
+
+.social-icon-twitter {
+  width: 32px;
+  height: 32px;
+  padding-top: 8px;
+  display: inline-block;
+  background-color: #f16d7f;
+  color: #fff;
+  font-family: FontAwesome;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  vertical-align: top; }
+
+.social-icon-twitter_position {
+  margin-right: 6px; }
+
+.social-icon-linkedin {
+  width: 32px;
+  height: 32px;
+  padding-top: 8px;
+  display: inline-block;
+  background-color: #fff;
+  color: #b2b2b2;
+  font-family: FontAwesome;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  vertical-align: top; }
+
+.social-icon-linkedin_position {
+  margin-right: 6px; }
+
+.social-icon-pinterest {
+  width: 32px;
+  height: 32px;
+  padding-top: 8px;
+  display: inline-block;
+  background-color: #fff;
+  color: #b2b2b2;
+  font-family: FontAwesome;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  vertical-align: top; }
+
+.social-icon-pinterest_position {
+  margin-right: 6px; }
+
+.social-icon-google-plus {
+  width: 32px;
+  height: 32px;
+  padding-top: 8px;
+  display: inline-block;
+  background-color: #fff;
+  color: #b2b2b2;
+  font-family: FontAwesome;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  vertical-align: top; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
