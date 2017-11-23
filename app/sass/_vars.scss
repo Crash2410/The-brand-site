@@ -17,8 +17,9 @@ $brand-warning: #cbb956;
 $brand-danger: #bf5329;
 
 // Typography
-// @fa-font-path: "../fonts/Fontawesome/";
+// @fa-font-path: "../fonts/$font-icon/";
 $font-family-sans-serif: "Lato", sans-serif;
+$font-icon: "$font-icon";
 $font-size-base: 14px;
 $line-height-base: 1.5;
 $text-color: #9f9f9f;
