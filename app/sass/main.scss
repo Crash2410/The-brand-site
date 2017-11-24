@@ -493,7 +493,6 @@ body {
 
 .brand-category-img-left {
 	padding-right: 20px;
-	position: relative;
 }
 
 .brand-category-img-right {
@@ -520,8 +519,7 @@ body {
 	font-size: 30px;
 	font-weight: 900;
 }
-
-// -- Enfd of `category`
+// -- End of `category`
 // -- Start of `products` --
 .products-content {
 	max-width: 1410px;
@@ -566,9 +564,15 @@ body {
 	z-index: 10;
 
 	&:hover {
-        filter: brightness(0.4); // background-color: rgba(#5a5a5a, 10%);  // Vesion - bgc
+        // filter: brightness(0.4);
         box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
-        transition: box-shadow .5s ease;
+        transition: box-shadow .2s ease;
+      // Vesion background
+	    	background-color: rgba(#5a5a5a, 10%);
+	     	background-position: 0 0;
+	    	background-size: 261px 279px;
+    	// opacity: .7;
+    		z-index: 101;
 
         &:after {
         	visibility: visible;
@@ -587,7 +591,8 @@ body {
     	visibility: hidden;
     	cursor: pointer;
     	color: #fff;
-    	font-weight: 500;
+    	// color: rgba(#fff, 160%);
+    	font-weight: 600;
     	text-align: center;
     	line-height: 40px;
     }

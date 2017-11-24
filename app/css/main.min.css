@@ -3578,8 +3578,7 @@ body {
   position: relative; }
 
 .brand-category-img-left {
-  padding-right: 20px;
-  position: relative; }
+  padding-right: 20px; }
 
 .brand-category-img-right {
   padding-left: 20px; }
@@ -3639,15 +3638,18 @@ body {
   position: relative;
   z-index: 10; }
   .product:hover {
-    -webkit-filter: brightness(0.4);
-            filter: brightness(0.4);
     -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
-    -webkit-transition: -webkit-box-shadow .5s ease;
-    transition: -webkit-box-shadow .5s ease;
-    -o-transition: box-shadow .5s ease;
-    transition: box-shadow .5s ease;
-    transition: box-shadow .5s ease, -webkit-box-shadow .5s ease; }
+    -webkit-transition: -webkit-box-shadow .2s ease;
+    transition: -webkit-box-shadow .2s ease;
+    -o-transition: box-shadow .2s ease;
+    transition: box-shadow .2s ease;
+    transition: box-shadow .2s ease, -webkit-box-shadow .2s ease;
+    background-color: #5a5a5a;
+    background-position: 0 0;
+    -webkit-background-size: 261px 279px;
+            background-size: 261px 279px;
+    z-index: 101; }
     .product:hover:after {
       visibility: visible; }
   .product:after {
@@ -3665,7 +3667,7 @@ body {
     visibility: hidden;
     cursor: pointer;
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     line-height: 40px; }
 
