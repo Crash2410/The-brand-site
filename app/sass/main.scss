@@ -567,34 +567,41 @@ body {
         // filter: brightness(0.4);
         box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
         transition: box-shadow .2s ease;
-      // Vesion background
-	    	background-color: rgba(#5a5a5a, 10%);
-	     	background-position: 0 0;
-	    	background-size: 261px 279px;
-    	// opacity: .7;
     		z-index: 101;
 
         &:after {
         	visibility: visible;
         }
     } // Hover end
+    // &:after {
+    // 	content: "Add to cart";
+    // 	display: block;
+    // 	width: 123px;
+    // 	height: 40px;
+    // 	position: absolute;
+    // 	z-index: 110;
+    // 	top: calc(50% - 78.5px);
+    // 	left: calc(50% - 123px/2);
+    // 	border: 1px solid #fff;
+    // 	visibility: hidden;
+    // 	cursor: pointer;
+    // 	color: #fff;
+    // 	// color: rgba(#fff, 160%);
+    // 	font-weight: 600;
+    // 	text-align: center;
+    // 	line-height: 40px;
+    // }
+    // Version of Hover with background `product-hover-add-to-cart.png`
     &:after {
-    	content: "Add to cart";
+    	content: url(../img/product-hover-add-to-cart.png);
     	display: block;
-    	width: 123px;
-    	height: 40px;
     	position: absolute;
-    	z-index: 110;
-    	top: calc(50% - 78.5px);
-    	left: calc(50% - 123px/2);
-    	border: 1px solid #fff;
-    	visibility: hidden;
-    	cursor: pointer;
-    	color: #fff;
-    	// color: rgba(#fff, 160%);
-    	font-weight: 600;
-    	text-align: center;
-    	line-height: 40px;
+			top: 0;
+			left: 0;
+			background-position: 0 0;
+	    background-size: 261px 279px;
+	    cursor: pointer;
+			visibility: hidden;
     }
   }
 
