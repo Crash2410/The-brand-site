@@ -365,8 +365,8 @@ body {
 	width: 100%;
 	list-style: none;
 	display: block;
-	padding: 0;
-	margin: 1.5rem 25%;
+	padding-left: 25%;
+	padding-right: 25%;
 	z-index: 101;
 	background-color: #FFF;
 }
@@ -412,6 +412,8 @@ body {
 //
 // -- Start `slider` --
 .brand-slider {
+	width: 100%;
+	height: auto;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -421,6 +423,11 @@ body {
 		width: 100%;
 		height: auto;
 	}
+}
+
+.brand-slider-link {
+	text-decoration: none;
+	display: block;
 }
 
 .brand-slider-label {
