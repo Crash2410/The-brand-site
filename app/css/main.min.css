@@ -3460,12 +3460,12 @@ body {
   height: auto; }
 
 .brand-nav-pos-abs {
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #FFF;
   z-index: 100;
-  width: 100%;
+  background-color: #FFF;
   border-left: solid 1px #ececec;
   border-right: solid 1px #ececec; }
 
@@ -3481,15 +3481,31 @@ body {
 .brand-nav-item {
   display: inline-block;
   text-transform: uppercase;
-  padding-right: 48px; }
+  padding-right: 48px;
+  z-index: 101; }
   .brand-nav-item:last-child {
     padding-right: 0; }
   .brand-nav-item a {
+    display: block;
     color: #222;
     font-weight: 600;
-    text-decoration: none; }
-    .brand-nav-item a:hover {
-      color: #f16d7f;
+    text-decoration: none;
+    position: relative;
+    z-index: 101; }
+    .brand-nav-item a:after {
+      width: -webkit-calc(100% + 4px);
+      width: calc(100% + 4px);
+      height: 3px;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 32px;
+      left: 0px;
+      z-index: 102;
+      background-color: #f16d7f;
+      visibility: hidden; }
+    .brand-nav-item a:hover:after {
+      visibility: visible;
       -webkit-transition: color .1s ease;
       -o-transition: color .1s ease;
       transition: color .1s ease; }
@@ -3533,25 +3549,34 @@ body {
   text-transform: uppercase; }
 
 .category-content {
-  max-width: 1410px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0; }
+  .category-content-mt {
+    margin-top: 763px; }
 
-.brand-category {
-  margin-top: 763px;
-  position: relative; }
+.category-item-link {
+  display: block;
+  text-decoration: none;
+  width: auto;
+  height: auto; }
+  .category-item-link:hover {
+    opacity: 0.8;
+    -webkit-transition: opacity .1s ease;
+    -o-transition: opacity .1s ease;
+    transition: opacity .1s ease; }
 
 .brand-category-img {
   margin-bottom: 20px;
+  display: block;
   position: relative; }
 
 .brand-category-img-left {
-  margin-left: 130px;
-  margin-right: 20px;
+  padding-right: 20px;
   position: relative; }
 
 .brand-category-img-right {
-  margin-left: 20px; }
+  padding-left: 20px; }
 
 .category-label {
   background-color: #fff;
