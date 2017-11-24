@@ -591,7 +591,7 @@ body {
     // 	text-align: center;
     // 	line-height: 40px;
     // }
-    // Version of Hover with background `product-hover-add-to-cart.png`
+// Version of Hover with background `product-hover-add-to-cart.png`
     &:after {
     	content: url(../img/product-hover-add-to-cart.png);
     	display: block;
@@ -605,11 +605,6 @@ body {
     }
   }
 
-// TODO
-// Решить вопрос по приминению фильтра только к img, без текста.
-// Отображение 'Add to cart' - добавить яркость,
-// изображение корзики img/basket_svg.svg перед текстом
-//
 .product__item {
 	width: 100%;
 	height: auto;
@@ -1116,7 +1111,7 @@ body {
 	&:hover {
 		background-color: $accent;
 		color: #fff;
-		transition: background-color 0.5s ease;
+		transition: background-color 0.2s ease;
 	}
 }
 
