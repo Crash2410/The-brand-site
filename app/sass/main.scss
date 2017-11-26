@@ -373,6 +373,7 @@ body {
 
 .brand-nav-item {
 	display: inline-block;
+	position: relative;
 	text-transform: uppercase;
 	padding-right: 48px;
 	z-index: 101;
@@ -380,6 +381,39 @@ body {
 	&:last-child {
 		padding-right: 0;
 	}
+// Start of Dropdown menu item
+.m-dropdown {
+	width: 278px;
+	// display: block;
+	display: none;
+	position: absolute;
+	top: calc(100% + 4px);
+	left: 0;
+	z-index: 102;
+	list-style: none;
+	padding-left: 0;
+	border: 1px solid #e8e8e8;
+	border-radius: 4px;
+	background-color: #FFF;
+	padding-left: 26px;
+	padding-top: 20px;
+
+
+	&__saparator {  // Separator of menu item
+    display: block;
+    position: absolute;
+    z-index: 103;
+    top: calc(100% + 40px);
+    left: 0;
+    width: 234px;
+    height: 1px;
+    background-color: #e8e8e8;
+	}
+
+	&__item {
+
+	}
+}
 
 	& a {
 		display: block;
@@ -1090,27 +1124,44 @@ body {
 		}
 	}
 }
-
+// Social icons begin
 .col-socials {
 	max-with: auto;
 }
-
+// Fa icons
+// .social-icon-facebook {
+// 	width: 32px;
+// 	height: 32px;
+// 	display: inline-block;
+// 	background-color: #fff;
+// 	padding-top: 8px;
+// 	font-family: $font-icon;
+// 	color: #b2b2b2;
+// 	font-size: 16px;
+// 	font-weight: 400;
+// 	line-height: 16px;
+// 	text-align: center;
+// 	vertical-align: top;
+// 	&:hover {
+// 		background-color: $accent;
+// 		color: #fff;
+// 		transition: background-color 0.2s ease;
+// 	}
+// }
+//  Spite icon
 .social-icon-facebook {
 	width: 32px;
 	height: 32px;
 	display: inline-block;
-	background-color: #fff;
-	padding-top: 8px;
-	font-family: $font-icon;
-	color: #b2b2b2;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 16px;
-	text-align: center;
 	vertical-align: top;
+	background-color: #fff;
+	background-image: url("../img/socials-icons-sprite.png");
+	background-position: -4px -1px;
 	&:hover {
 		background-color: $accent;
 		color: #fff;
+		background-image: url("../img/socials-icons-sprite.png");
+		background-position: -4px -41px;
 		transition: background-color 0.2s ease;
 	}
 }
@@ -1118,23 +1169,40 @@ body {
 .social-icon-facebook_position {
 	margin-right: 6px;
 }
-
+//  Fa version
+// .social-icon-twitter {
+// 	width: 32px;
+// 	height: 32px;
+// 	padding-top: 8px;
+// 	display: inline-block;
+// 	background-color: #fff;
+// 	color: #b2b2b2;
+// 	font-family: $font-icon;
+// 	font-size: 16px;
+// 	font-weight: 400;
+// 	line-height: 16px;
+// 	text-align: center;
+// 	vertical-align: top;
+// 	&:hover {
+// 		background-color: $accent;
+// 		color: #fff;
+// 		transition: background-color 0.5s ease;
+// 	}
+// }
+// Sprite version
 .social-icon-twitter {
 	width: 32px;
 	height: 32px;
-	padding-top: 8px;
 	display: inline-block;
-	background-color: #fff;
-	color: #b2b2b2;
-	font-family: $font-icon;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 16px;
-	text-align: center;
 	vertical-align: top;
+	background-color: #fff;
+	background-image: url("../img/socials-icons-sprite.png");
+	background-position: -40px -1px;
+
 	&:hover {
 		background-color: $accent;
-		color: #fff;
+		background-image: url("../img/socials-icons-sprite.png");
+		background-position: -40px -41px;
 		transition: background-color 0.5s ease;
 	}
 }
@@ -1142,23 +1210,40 @@ body {
 .social-icon-twitter_position {
 	margin-right: 6px;
 }
-
+//  Fa version
+// .social-icon-linkedin {
+// 	width: 32px;
+// 	height: 32px;
+// 	padding-top: 8px;
+// 	display: inline-block;
+// 	background-color: #fff;
+// 	color: #b2b2b2;
+// 	font-family: $font-icon;
+// 	font-size: 16px;
+// 	font-weight: 400;
+// 	line-height: 16px;
+// 	text-align: center;
+// 	vertical-align: top;
+// 	&:hover {
+// 		background-color: $accent;
+// 		color: #fff;
+// 		transition: background-color 0.5s ease;
+// 	}
+// }
+// Sprite version
 .social-icon-linkedin {
 	width: 32px;
 	height: 32px;
-	padding-top: 8px;
 	display: inline-block;
-	background-color: #fff;
-	color: #b2b2b2;
-	font-family: $font-icon;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 16px;
-	text-align: center;
 	vertical-align: top;
+	background-color: #fff;
+	background-image: url("../img/socials-icons-sprite.png");
+	background-position: -76px -1px;
+
 	&:hover {
 		background-color: $accent;
-		color: #fff;
+		background-image: url("../img/socials-icons-sprite.png");
+		background-position: -76px -41px;
 		transition: background-color 0.5s ease;
 	}
 }
@@ -1166,23 +1251,41 @@ body {
 .social-icon-linkedin_position {
 	margin-right: 6px;
 }
-
+// Fa version
+// .social-icon-pinterest {
+// 	width: 32px;
+// 	height: 32px;
+// 	padding-top: 8px;
+// 	display: inline-block;
+// 	background-color: #fff;
+// 	color: #b2b2b2;
+// 	font-family: $font-icon;
+// 	font-size: 16px;
+// 	font-weight: 400;
+// 	line-height: 16px;
+// 	text-align: center;
+// 	vertical-align: top;
+// 	&:hover {
+// 		background-color: $accent;
+// 		color: #fff;
+// 		transition: background-color 0.5s ease;
+// 	}
+// }
+//  Sprite version
 .social-icon-pinterest {
 	width: 32px;
 	height: 32px;
 	padding-top: 8px;
 	display: inline-block;
-	background-color: #fff;
-	color: #b2b2b2;
-	font-family: $font-icon;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 16px;
-	text-align: center;
 	vertical-align: top;
+	background-color: #fff;
+	background-image: url("../img/socials-icons-sprite.png");
+	background-position: -112px -1px;
+
 	&:hover {
 		background-color: $accent;
-		color: #fff;
+		background-image: url("../img/socials-icons-sprite.png");
+		background-position: -112px -41px;
 		transition: background-color 0.5s ease;
 	}
 }
@@ -1190,23 +1293,40 @@ body {
 .social-icon-pinterest_position {
 	margin-right: 6px;
 }
-
+// Fa version
+// .social-icon-google-plus {
+// 	width: 32px;
+// 	height: 32px;
+// 	padding-top: 8px;
+// 	display: inline-block;
+// 	background-color: #fff;
+// 	color: #b2b2b2;
+// 	font-family: $font-icon;
+// 	font-size: 16px;
+// 	font-weight: 400;
+// 	line-height: 16px;
+// 	text-align: center;
+// 	vertical-align: top;
+// 	&:hover {
+// 		background-color: $accent;
+// 		color: #fff;
+// 		transition: background-color 0.5s ease;
+// 	}
+// }
+// Sprite version
 .social-icon-google-plus {
 	width: 32px;
 	height: 32px;
-	padding-top: 8px;
 	display: inline-block;
-	background-color: #fff;
-	color: #b2b2b2;
-	font-family: $font-icon;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 16px;
-	text-align: center;
 	vertical-align: top;
+	background-color: #fff;
+		background-image: url("../img/socials-icons-sprite.png");
+	background-position: -148px -1px;
+
 	&:hover {
 		background-color: $accent;
-		color: #fff;
+		background-image: url("../img/socials-icons-sprite.png");
+		background-position: -148px -41px;
 		transition: background-color 0.5s ease;
 	}
 }
