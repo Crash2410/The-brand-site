@@ -523,19 +523,24 @@ body {
 //
 // -- Sart `Category` --
 .category-content {
-	max-width: 1140px;
+	max-width: 1160px;
 	margin: 0 auto;
-	padding: 0;
 	&-mt {
-		margin-top: 763px;
+		margin-top: 743px;
 	}
+}
+
+.col-md-6-p10 {
+ padding: 0 10px;
 }
 
 .category-item-link {
 	display: block;
 	text-decoration: none;
-	width: auto;
+	width: 100%;
 	height: auto;
+	margin-top: 20px;
+	padding: 0 10px;
 	&:hover {
 		opacity: 0.8;
 		transition: opacity .1s ease;
@@ -543,17 +548,16 @@ body {
 }
 
 .brand-category-img {
-	margin-bottom: 20px;
 	display: block;
 	position: relative;
 }
 
 .brand-category-img-left {
-	padding-right: 20px;
+	padding-right: 10px;
 }
 
 .brand-category-img-right {
-	padding-left: 20px;
+	padding-left: 10px;
 }
 
 .category-label {
