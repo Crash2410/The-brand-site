@@ -345,14 +345,22 @@ body {
     		padding: 12px 0;
     		font-size: 15px;
     		width: 130px;
-
-    		.fa-caret-down {
-    			color: #fff;
-    			font-size: 14px;
-    			font-weight: 400;
-    			margin: 0;
-    			padding-left: 6px;
-    			padding-right: 0px;
+				// Version Fa - font awesome
+    		// .fa-caret-down {
+    		// 	color: #fff;
+    		// 	font-size: 14px;
+    		// 	font-weight: 400;
+    		// 	margin: 0;
+    		// 	padding-left: 6px;
+    		// 	padding-right: 0px;
+    		// }
+    		.arrow-drop-down-white {
+    			width: 14px;
+					height: 10px;
+					display: inline-block;
+					vertical-align: middle;
+					background-image: url("../img/socials-icons-sprite.png");
+					background-position: -192px -52px;
     		}
     	}
     }
