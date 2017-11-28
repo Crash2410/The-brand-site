@@ -1,0 +1,99 @@
+// -- Start Navigation menu (main) --
+.brand-content-relative {
+  position: relative;
+  z-index: 200;
+  height: auto;
+}
+
+.brand-nav-pos-abs {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #FFF;
+  border-left: solid 1px #ececec;
+  border-right: solid 1px #ececec;
+}
+
+.brand-nav {
+  width: 100%;
+  list-style: none;
+  display: block;
+  padding-left: 25%;
+  padding-right: 25%;
+  z-index: 101;
+  background-color: #FFF;
+}
+
+.brand-nav-item {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  padding-right: 48px;
+  z-index: 101;
+
+  &:last-child {
+    padding-right: 0;
+  }
+// Start of Dropdown menu item
+.m-dropdown {
+  width: 278px;
+  // display: block;
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 102;
+  list-style: none;
+  padding-left: 0;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  background-color: #FFF;
+  padding-left: 26px;
+  padding-top: 20px;
+
+
+  &__saparator {  // Separator of menu item
+    display: block;
+    position: absolute;
+    z-index: 103;
+    top: calc(100% + 40px);
+    left: 0;
+    width: 234px;
+    height: 1px;
+    background-color: #e8e8e8;
+  }
+
+  &__item {
+
+  }
+}
+
+  & a {
+    display: block;
+    color: #222;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    z-index: 101;
+// Display outline under memu item on hover
+    &:after {
+      width: calc(100% + 4px);
+      height: 3px;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 32px;
+      left: 0px;
+      z-index: 102;
+      background-color: $accent;
+      visibility: hidden;
+    }
+      &:hover:after {
+          visibility: visible;
+          transition: color .1s ease;
+      }
+  }
+}
+// -- End `Navigation menu` --

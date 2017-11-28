@@ -1,0 +1,64 @@
+@import "../_vars.scss";
+
+@mixin flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-start-start {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+@mixin flex-around-start {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: start;
+  align-content: flex-start;
+}
+
+@mixin flex-between-start {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: start;
+  align-content: flex-start;
+}
+
+@mixin flex-column-between-start {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: start;
+  align-content: flex-start;
+}
+
+@mixin main-contant {
+  width: $main-content-width;
+  margin: 0 auto;
+  padding-left: $main-paddings-width;
+  padding-right: $main-paddings-width;
+}
+
+@mixin d-absolute($top, $left) {
+  position: absolute;
+  top: $top+px;
+  left: $left+px;
+}
+
+@mixin clear-fix {
+  content: "";
+  display: table;
+  clear: both;
+}

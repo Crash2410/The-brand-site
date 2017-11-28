@@ -1,0 +1,111 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  &:before,
+  &:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+*::-webkit-input-placeholder {
+  color: $input-color-placeholder;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: $input-color-placeholder;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: $input-color-placeholder;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: $input-color-placeholder;
+  opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: $brand-danger;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: $brand-info;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: $font-size-base;
+  min-width: 320px;
+  position: relative;
+  line-height: $line-height-base;
+  font-family: $font-family-sans-serif;
+  // overflow-x: hidden;  // Временно отключено для отладки
+  opacity: 1;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+//-- Class for removing all gutters from bootstrap col-md-1!! --
+.no-gutter {
+  margin: 0 -15px;
+  padding: 0;
+}
+
+// Main container theme `The brand` (add to bootstrap .container)
+.container-theme {
+  border-left: solid 1px #ececec;
+  border-right: solid 1px #ececec;
+  width: $body-width;
+  margin: 0 auto;
+  padding: 0;
+}
+
+// Button all on page
+.button {
+  display: inline-block;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  background-color: $accent;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  outline: none;
+  transition: background-color .1s ease;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: lighten($accent, 5%);
+    &::after {
+      opacity: .22;
+    }
+  }
+
+  &:active {
+    background-color: darken($accent, 5%);
+    &::after {
+      opacity: .32;
+    }
+  }
+}

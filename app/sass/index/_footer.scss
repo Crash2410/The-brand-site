@@ -1,0 +1,286 @@
+// -- Begin of `b-footer` --
+// `b-footer-top`
+.b-footer-top {
+  max-width: 1140px;
+  height: auto;
+    margin: 0 auto; // display: flex;
+    display: block;
+    margin-top: 110px;
+    margin-bottom: 90px;
+  }
+
+// Star of Footer text 1st column
+.footer-text {
+  color: darken(#898989, 5%);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  padding-right: 148px;
+}
+
+.footer-text-mt {
+  margin-top: 22px;
+}
+
+.footer-title {
+  color: $accent;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+
+.menu-v {
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 42px;
+    a {
+      text-decoration: none;
+      color: #898989;
+      &:hover {
+        color: $accent;
+        transition: color .1s ease;
+      }
+    }
+  }
+}
+
+// End of Top of footer
+// Start of Footer - social links
+// Move to left -15px
+.col-md-ml {
+  margin-left: -15px;
+}
+
+.b-footer-bottom {
+  background-color: #e6e6e6;
+  width: 100%;
+
+  &-content {
+    max-width: 1140px;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 31px;
+
+    &-text {
+      height: 100%;
+      padding: 0;
+      color: #7a7a7a;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 64px;
+      text-align: left;
+    }
+  }
+}
+// Social icons begin
+.col-socials {
+  max-with: auto;
+}
+// Fa icons
+// .social-icon-facebook {
+//  width: 32px;
+//  height: 32px;
+//  display: inline-block;
+//  background-color: #fff;
+//  padding-top: 8px;
+//  font-family: $font-icon;
+//  color: #b2b2b2;
+//  font-size: 16px;
+//  font-weight: 400;
+//  line-height: 16px;
+//  text-align: center;
+//  vertical-align: top;
+//  &:hover {
+//    background-color: $accent;
+//    color: #fff;
+//    transition: background-color 0.2s ease;
+//  }
+// }
+//  Spite icon
+.social-icon-facebook {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  background-image: url("../../img/socials-icons-sprite.png");
+  background-position: -7px -1px;
+  &:hover {
+    background-color: $accent;
+    color: #fff;
+    background-image: url("../../img/socials-icons-sprite.png");
+    background-position: -7px -41px;
+    transition: background-color 0.2s ease;
+  }
+}
+
+.social-icon-facebook_position {
+  margin-right: 6px;
+}
+//  Fa version
+// .social-icon-twitter {
+//  width: 32px;
+//  height: 32px;
+//  padding-top: 8px;
+//  display: inline-block;
+//  background-color: #fff;
+//  color: #b2b2b2;
+//  font-family: $font-icon;
+//  font-size: 16px;
+//  font-weight: 400;
+//  line-height: 16px;
+//  text-align: center;
+//  vertical-align: top;
+//  &:hover {
+//    background-color: $accent;
+//    color: #fff;
+//    transition: background-color 0.5s ease;
+//  }
+// }
+// Sprite version
+.social-icon-twitter {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  background-image: url("../../img/socials-icons-sprite.png");
+  background-position: -43px -1px;
+
+  &:hover {
+    background-color: $accent;
+    background-image: url("../../img/socials-icons-sprite.png");
+    background-position: -43px -41px;
+    transition: background-color 0.5s ease;
+  }
+}
+
+.social-icon-twitter_position {
+  margin-right: 6px;
+}
+//  Fa version
+// .social-icon-linkedin {
+//  width: 32px;
+//  height: 32px;
+//  padding-top: 8px;
+//  display: inline-block;
+//  background-color: #fff;
+//  color: #b2b2b2;
+//  font-family: $font-icon;
+//  font-size: 16px;
+//  font-weight: 400;
+//  line-height: 16px;
+//  text-align: center;
+//  vertical-align: top;
+//  &:hover {
+//    background-color: $accent;
+//    color: #fff;
+//    transition: background-color 0.5s ease;
+//  }
+// }
+// Sprite version
+.social-icon-linkedin {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  background-image: url("../../img/socials-icons-sprite.png");
+  background-position: -79px -1px;
+
+  &:hover {
+    background-color: $accent;
+    background-image: url("../../img/socials-icons-sprite.png");
+    background-position: -79px -41px;
+    transition: background-color 0.5s ease;
+  }
+}
+
+.social-icon-linkedin_position {
+  margin-right: 6px;
+}
+// Fa version
+// .social-icon-pinterest {
+//  width: 32px;
+//  height: 32px;
+//  padding-top: 8px;
+//  display: inline-block;
+//  background-color: #fff;
+//  color: #b2b2b2;
+//  font-family: $font-icon;
+//  font-size: 16px;
+//  font-weight: 400;
+//  line-height: 16px;
+//  text-align: center;
+//  vertical-align: top;
+//  &:hover {
+//    background-color: $accent;
+//    color: #fff;
+//    transition: background-color 0.5s ease;
+//  }
+// }
+//  Sprite version
+.social-icon-pinterest {
+  width: 32px;
+  height: 32px;
+  padding-top: 8px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  background-image: url("../../img/socials-icons-sprite.png");
+  background-position: -115px -1px;
+
+  &:hover {
+    background-color: $accent;
+    background-image: url("../../img/socials-icons-sprite.png");
+    background-position: -115px -41px;
+    transition: background-color 0.5s ease;
+  }
+}
+
+.social-icon-pinterest_position {
+  margin-right: 6px;
+}
+// Fa version
+// .social-icon-google-plus {
+//  width: 32px;
+//  height: 32px;
+//  padding-top: 8px;
+//  display: inline-block;
+//  background-color: #fff;
+//  color: #b2b2b2;
+//  font-family: $font-icon;
+//  font-size: 16px;
+//  font-weight: 400;
+//  line-height: 16px;
+//  text-align: center;
+//  vertical-align: top;
+//  &:hover {
+//    background-color: $accent;
+//    color: #fff;
+//    transition: background-color 0.5s ease;
+//  }
+// }
+// Sprite version
+.social-icon-google-plus {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+    background-image: url("../../img/socials-icons-sprite.png");
+  background-position: -151px -1px;
+
+  &:hover {
+    background-color: $accent;
+    background-image: url("../../img/socials-icons-sprite.png");
+    background-position: -151px -41px;
+    transition: background-color 0.5s ease;
+  }
+}

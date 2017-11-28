@@ -1,0 +1,164 @@
+//  -- Start of `features`  --
+//  TODO. Make version with Flex-box
+// .container-theme-flex {
+// width: $body-width;
+// margin: 0 auto;
+//  display: flex;
+//  border-left: solid 1px #ececec;
+//  border-right: solid 1px #ececec;
+//  height: auto;
+//  z-index: 10;
+// }
+.features {
+  max-width: 1410px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  z-index: 11;
+}
+
+.banner {
+  display: inline-block;
+  margin-top: 113px;
+  width: auto;
+  height: auto;
+  z-index: 12;
+  position: relative;
+}
+
+.banner__image {
+  width: 767px;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  vertical-align: top;
+    z-index: 13; // &:after {
+    //  content: "";
+    //  background-image: url("../img/offer-mask.png");
+    // }
+  }
+
+  .banner__text1 {
+    display: inline-block;
+    width: auto;
+    font-size: 53.62px;
+    font-weight: 600;
+    text-align: left;
+    color: #ffff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 146px;
+    left: 40px;
+    z-index: 14;
+  }
+
+  .banner__text1-accent {
+    color: #f16d7f;
+  }
+
+  .banner__text2 {
+    display: block;
+    color: #fff;
+    font-size: 32.17px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    position: absolute;
+    top: calc(146px + 53.62px + 0.25*32.17px);
+    left: 40px;
+    z-index: 14;
+  }
+
+  .feature-description {
+    width: 373px;
+    height: 529px;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 113px;
+    padding-left: 114px;
+    padding-right: 43px;
+    padding-top: 50px;
+    background-color: #222224;
+    position: relative;
+    z-index: 10;
+  }
+
+  .feature-description__title-1 {
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 10;
+
+    &:before {
+      width: 45px;
+      height: auto;
+      content: url("../img/car-form.png");
+      display: inline-block;
+      position: absolute;
+      top: -6px;
+      left: -76px;
+      z-index: 100;
+    }
+  }
+
+  .feature-description__title-2 {
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    position: relative;
+
+    &:before {
+      width: 45px;
+      height: auto;
+      content: url("../img/percentage-form.png");
+      display: inline-block;
+      position: absolute;
+      top: -6px;
+      left: -76px;
+      z-index: 100;
+    }
+  }
+
+  .feature-description__title-3 {
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    position: relative;
+
+    &:before {
+      width: 45px;
+      height: auto;
+      content: url("../img/crown-form.png");
+      display: inline-block;
+      position: absolute;
+      top: -6px;
+      left: -76px;
+      z-index: 100;
+    }
+  }
+
+  .feature-description__text {
+    color: #fbfbfb;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    hyphens: manual;
+  }
+
+  .feature-description__text-bottom-m {
+    margin-bottom: 50px;
+  }
+
+// -- End `features` --
