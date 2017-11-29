@@ -175,7 +175,7 @@
           }
         }
       }
-// Mega menu
+// Mega menu start
       .mega-menu {
           width: 846px;
           height: 308px;
@@ -253,11 +253,16 @@
           }
       }
 
-      .mega-menu_active {
+      .mega-menu_visible {
         // @include flex-between-start;
         display: block;
       }
 
+      .mega-menu_hidden {
+        // @include flex-between-start;
+        display: none;
+      }
+// Mega menu end
 
 
       &-input {
@@ -328,8 +333,12 @@
         user-select: none;
       }
 
-      &-basket-counter_active {
+      &-basket-counter_visible {
         display: block;
+      }
+
+      &-basket-counter_hidden {
+        display: none;
       }
 
       .header-login-button-menu {
