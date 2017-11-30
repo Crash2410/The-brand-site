@@ -1,4 +1,5 @@
 .top-filter {
+
   h2 {
     font-size: 14px;
     color: rgb(111,110,110);
@@ -12,6 +13,7 @@
     color: rgb(111,110,110);
     list-style: none;
     padding-left: 0;
+    margin-bottom: 30px;
 
     &__item {
       display: inline-block;
@@ -43,4 +45,175 @@
 
   }  // end .top-filter-bc
 
-}  // end .top-filter
+  // Start of size check
+  &__size-form {
+    color: rgb(111,110,110);
+    .size-checkbox {
+      vertical-align: top;
+      margin: 0 10px 12px 0;
+      width: 12px;
+      height: 12px;
+      &:not(checked) {  /* Прячем оригинальный чекбокс. */
+        position: absolute;
+        opacity: 0;
+        + label {
+            position: relative; /* будем позиционировать псевдочекбокс относительно label */
+            padding: 0 24px 0 22px; /* оставляем слева от label место под псевдочекбокс */
+            &:before {
+              content: "";
+              @include d-absolute(0, 0);
+              width: 12px;
+              height: 12px;
+              background-color: #fff;
+              border: 1px solid $list-group-border;
+              transition: background-color .2s ease .2s;
+            }
+        }
+        }  // not checked
+      &:checked + label:before {  /* Checked */
+        background: $accent;
+      }
+      &:focus + label:before {  /* Focus on box */
+        box-shadow: 0 0 0 2px rgba(255,255,0,.5);
+      }
+    }
+    .cb-2d-line {
+      margin-top: 9px;
+    }
+    .cb-label_pl {
+      padding-left: 18px;
+    }
+  }
+
+} // end .top-filter
+// Top filter. Price right part
+.price-container {
+  width: 100%;
+  position: relative;
+
+  // Range begin
+  input[type=range] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+    margin: 16px 0;
+
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  /* End of hiding */
+  /* Special styling for WebKit/Blink */
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #e7697a;
+    height: 16px;
+    width: 16px;
+    border-radius: 16px;
+    background: #f16d7f; // $accent
+    cursor: pointer;
+    // margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    margin-top: -6px;
+  }
+
+  /* All the same stuff for Firefox */
+  input[type=range]::-moz-range-thumb {
+    border: 1px solid #e7697a;
+    height: 16px;
+    width: 16px;
+    border-radius: 16px;
+    background: #f16d7f; // $accent
+    cursor: pointer;
+  }
+
+  /* All the same stuff for IE */
+  input[type=range]::-ms-thumb {
+    border: 1px solid #e7697a;
+    height: 16px;
+    width: 16px;
+    border-radius: 16px;
+    background: #f16d7f; // $accent
+    cursor: pointer;
+  }
+  // slider-runnable-track
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    // box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #f0f0f0;
+    border-radius: 3px;
+    border: 0.2px solid #010101;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #FCE3F0;
+  }
+
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    // box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border-color: transparent;
+    background: #f0f0f0;
+    border-width: 6px 0;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #f0f0f0;
+    border-radius: 3px;
+  }
+  input[type=range]::-ms-fill-upper {
+    background:#f0f0f0;
+    border: 0.2px solid transparent;
+    border-radius: 3px;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #FCE3F0;
+  }
+
+  .f-min-price {
+    position: relative;
+  }
+
+  .f-max-price {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+
+  .x-output {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: rgb(111,110,110);
+    padding-left: 8px;
+    // margin-left: 8px;
+    &:before {
+      content: "$";
+    }
+  }
+  .y-output {
+    position: absolute;
+    top: 100%;
+    left: 58%;
+    color: rgb(111,110,110);
+    padding-left: 8px;
+    &:before {
+      content: "$";
+    }
+  }
+
+} // End of Range
