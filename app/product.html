@@ -158,55 +158,55 @@
                 <div class="col-md-3">  <!-- 1st col-md-3 -->
                     <nav class="product-nav">  <!-- product navigation left side -->
                         <ul class="p-nav">
-                            <li> <div class="p-nav__title p-nav__title_active">Category</div>
+                            <li><div class="p-nav__title p-nav__title_active">Category</div>
                                 <ul class="dropdown-menu dropdown-menu_visible">
-                                    <li>Accoseries</li>
-                                    <li>Bags</li>
-                                    <li>Denim</li>
-                                    <li>Hoodies &amp; Sweatshirts</li>
-                                    <li>Jackets &amp; Coats</li>
-                                    <li>Pants</li>
-                                    <li>Polo</li>
-                                    <li>Shirts</li>
-                                    <li>Shoes</li>
-                                    <li>Shirts</li>
-                                    <li>Sweaters &amp; Knits</li>
-                                    <li>T-Shirts</li>
-                                    <li>Tanks</li>
+                                    <li><a href="">Accoseries</a></li>
+                                    <li><a href="">Bags</a></li>
+                                    <li><a href="">Denim</a></li>
+                                    <li><a href="">Hoodies &amp; Sweatshirts</a></li>
+                                    <li><a href="">Jackets &amp; Coats</a></li>
+                                    <li><a href="">Pants</a></li>
+                                    <li><a href="">Polo</a></li>
+                                    <li><a href="">Shirts</a></li>
+                                    <li><a href="">Shoes</a></li>
+                                    <li><a href="">Shirts</a></li>
+                                    <li><a href="">Sweaters &amp; Knits</a></li>
+                                    <li><a href="">T-Shirts</a></li>
+                                    <li><a href="">Tanks</a></li>
                                 </ul>
                             </li>
                             <li> <div class="p-nav__title">Brand</div>
                                 <ul class="dropdown-menu dropdown-menu_hidden">
-                                    <li>Accoseries</li>
-                                    <li>Bags</li>
-                                    <li>Denim</li>
-                                    <li>Hoodies &amp; Sweatshirts</li>
-                                    <li>Jackets &amp; Coats</li>
-                                    <li>Pants</li>
-                                    <li>Polo</li>
-                                    <li>Shirts</li>
-                                    <li>Shoes</li>
-                                    <li>Shirts</li>
-                                    <li>Sweaters &amp; Knits</li>
-                                    <li>T-Shirts</li>
-                                    <li>Tanks</li>
+                                    <li><a href="">Accoseries</a></li>
+                                    <li><a href="">Bags</a></li>
+                                    <li><a href="">Denim</a></li>
+                                    <li><a href="">Hoodies &amp; Sweatshirts</a></li>
+                                    <li><a href="">Jackets &amp; Coats</a></li>
+                                    <li><a href="">Pants</a></li>
+                                    <li><a href="">Polo</a></li>
+                                    <li><a href="">Shirts</a></li>
+                                    <li><a href="">Shoes</a></li>
+                                    <li><a href="">Shirts</a></li>
+                                    <li><a href="">Sweaters &amp; Knits</a></li>
+                                    <li><a href="">T-Shirts</a></li>
+                                    <li><a href="">Tanks</a></li>
                                 </ul>
                             </li>
                             <li> <div class="p-nav__title">Desiner</div>
                                  <ul class="dropdown-menu dropdown-menu_hidden">
-                                    <li>Accoseries</li>
-                                    <li>Bags</li>
-                                    <li>Denim</li>
-                                    <li>Hoodies &amp; Sweatshirts</li>
-                                    <li>Jackets &amp; Coats</li>
-                                    <li>Pants</li>
-                                    <li>Polo</li>
-                                    <li>Shirts</li>
-                                    <li>Shoes</li>
-                                    <li>Shirts</li>
-                                    <li>Sweaters &amp; Knits</li>
-                                    <li>T-Shirts</li>
-                                    <li>Tanks</li>
+                                    <li><a href="">Accoseries</a></li>
+                                    <li><a href="">Bags</a></li>
+                                    <li><a href="">Denim</a></li>
+                                    <li><a href="">Hoodies &amp; Sweatshirts</a></li>
+                                    <li><a href="">Jackets &amp; Coats</a></li>
+                                    <li><a href="">Pants</a></li>
+                                    <li><a href="">Polo</a></li>
+                                    <li><a href="">Shirts</a></li>
+                                    <li><a href="">Shoes</a></li>
+                                    <li><a href="">Shirts</a></li>
+                                    <li><a href="">Sweaters &amp; Knits</a></li>
+                                    <li><a href="">T-Shirts</a></li>
+                                    <li><a href="">Tanks</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -233,13 +233,49 @@
                 <div class="col-md-3">  <!-- 3d col-md-3 -->
                     <div class="top-filter">
                         <h2>Size</h2>
-
+                        <form action="handler.php" name="size" method="post"
+                            class="top-filter__size-form">
+                            <input type="checkbox" name="size_value" value="xxs"
+                                id="cb-xxs" class="size-checkbox">
+                            <label for="cb-xxs">XXS</label>
+                            <input type="checkbox" name="size_value" value="xs"
+                                id="cb-xs" class="size-checkbox">
+                            <label for="cb-xs">XS</label>
+                            <input type="checkbox" name="size_value" value="s"
+                                id="cb-s" class="size-checkbox">
+                            <label for="cb-s">S</label>
+                            <input type="checkbox" name="size_value" value="m"
+                                id="cb-m" class="size-checkbox">
+                            <label for="cb-m">M</label>
+                            <div class="cb-2d-line">
+                                <input type="checkbox" name="size_value" value="l"
+                                    id="cb-l" class="size-checkbox">
+                                <label for="cb-l">L</label>
+                                <span class="cb-label_pl"><input type="checkbox" name="size_value" value="xl"
+                                    id="cb-xl" class="size-checkbox">
+                                <label for="cb-xl">XL</label></span>
+                                <input type="checkbox" name="size_value" value="xxl"
+                                    id="cb-xxl" class="size-checkbox">
+                                <label for="cb-xxl">XXL</label>
+                            </div>
+                        </form>
                     </div>
                 </div>  <!--/ 3d col-md-3 -->
                 <div class="col-md-3">  <!-- 4th col-md-3 -->
                     <div class="top-filter">
                         <h2>Price</h2>
-
+                        <div class="price-container">
+                            <form action="/action_page1.php" class="f-min-price" method="post" name="min-price"
+                                oninput="x.value=parseInt(a.value)">
+                                <input type="range" id="a" name="a" value="50" min='0' max='2499'>
+                                <output name="x" for="a" class="x-output"></output>
+                            </form>
+                            <form action="/action_page1.php" class="f-max-price" method="post" name="max-price"
+                                oninput="y.value=parseInt(b.value)">
+                                <input type="range" id="b" name="b" value="2100" min='2500' max='5000'>
+                                <output name="y" for="b" class="y-output"></output>
+                            </form>
+                        </div>
                     </div>
                 </div>  <!--/ 4th col-md-3 -->
             </div> <!--/ row  1170 -->
