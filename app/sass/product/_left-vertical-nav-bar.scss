@@ -1,0 +1,77 @@
+// Start of Category left vertical nav bar
+//
+.container-theme-category {
+  margin-top: 60px;
+}
+
+.product-nav {
+  max-width: 244px;
+  width: 244px;
+  position: relative;
+}
+
+.p-nav {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+
+  // &_mtop {
+  //   margin-top: 20px;
+  // }
+
+  &__title {
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-left: 5px solid $accent;
+    border-bottom: 1px solid #ebebeb;
+    text-transform: uppercase;
+    color:  #6f6e6e;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+      &::after {  // Triangle on right default not active
+        content: "";
+        position: absolute;
+        top: 18.5px;
+        left: calc(100% - 14px);
+        @include triangle($bgc:#6f6e6e, $angle:180deg);
+        z-index: 10;
+    }
+      &_active {
+        &::after {  // Triangle on right active
+        content: "";
+        position: absolute;
+        top: 18.5px;
+        left: calc(100% - 14px);
+        @include triangle($bgc:$accent, $angle:0deg);
+        z-index: 10;
+        }
+      }
+  }
+}
+
+.dropdown-menu {
+  list-style: none;
+  padding-left: 18px;
+  border: none;
+  line-height: 48px;
+  color:  #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+
+}
+
+.dropdown-menu_visible {
+  display: block;
+}
+
+.dropdown-menu_hidden {
+  display: none;
+}

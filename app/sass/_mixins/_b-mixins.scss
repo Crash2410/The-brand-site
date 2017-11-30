@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-content: center;
 }
 
 @mixin flex-start-start {
@@ -28,12 +29,12 @@
   align-content: flex-start;
 }
 
-@mixin flex-between-start {
+@mixin flex-between-start-between {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: start;
-  align-content: flex-start;
+  align-content: space-between;
 }
 
 @mixin flex-column-between-start {
@@ -61,4 +62,14 @@
   content: "";
   display: table;
   clear: both;
+}
+
+@mixin triangle($t-width:8px, $t-height:5px, $bgc:#fff, $angle:0deg) {
+    width: 0;
+    height: 0;
+    $tw: $t-width/2;
+    border-style: solid;
+    border-width: 0 $tw $t-height $tw;
+    border-color: transparent transparent $bgc transparent;
+    transform: rotateZ($angle);
 }

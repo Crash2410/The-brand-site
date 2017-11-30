@@ -1,0 +1,46 @@
+// Bread crumbs
+.brand-nav-pos-static {
+  position: static;
+}
+// Top  bread crumbs
+.container-theme-bread-crumb {
+  background-color: #f8f3f4;
+  display: block;
+  position: static;
+}
+// .container-product import from `_common-styles`
+
+.bread-crumbs {
+  height: 148px;
+  @include flex-between-center;
+
+    &__title {
+    color:  $accent;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    color:  #636363;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+
+    .b-c {
+      list-style: none;
+      padding: 0;
+      text-transform: uppercase;
+      &__item {
+        display: inline-block;
+        &_accent {
+          color: $accent;
+        }
+      }
+    }
+  }
+}
+// End of Bread crumbs

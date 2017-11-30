@@ -1,3 +1,7 @@
+@import "../_fonts.sass";
+@import "../_libs.scss";
+@import "../_vars.scss";
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -71,9 +75,15 @@ body {
 .container-theme {
   border-left: solid 1px #ececec;
   border-right: solid 1px #ececec;
-  width: $body-width;
+  width: $body-width;  // 1600px
   margin: 0 auto;
   padding: 0;
+}
+// Main container width 1170px with paddings 15px 15px
+.container-product {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 // Button all on page

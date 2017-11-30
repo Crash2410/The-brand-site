@@ -1,10 +1,10 @@
-@import "../_fonts.sass";
-@import "../_libs.scss";
-@import "../_vars.scss";
-@import "../index/_common-styles.scss";
-@import "../index/_header.scss";
-@import "../index/_horizontal-nav-bar.scss";
-@import "../index/_index-top-slider.scss";
-@import "../index/_subscribe.scss";
-@import "../index/_footer.scss";
+@import "../_common/_common-styles.scss";  /* _vars, _fonts, _libs, .. */
+@import "../_common/_header.scss";
+@import "../_common/_horizontal-nav-bar.scss";
+@import "../_common/_index-top-slider.scss";
+@import "../_common/_bread-crumbs.scss";
+@import "_left-vertical-nav-bar.scss";
+@import "_product-content.scss";
+@import "../_common/_subscribe.scss";
+@import "../_common/_footer.scss";
 @import "_media.scss";
