@@ -16,10 +16,6 @@
   position: relative;
   z-index: 1;
 
-  // &_mtop {
-  //   margin-top: 20px;
-  // }
-
   &__title {
     display: block;
     position: relative;
@@ -35,6 +31,7 @@
     font-weight: 700;
     line-height: 20px;
     text-align: left;
+    cursor: pointer;
       &::after {  // Triangle on right default not active
         content: "";
         position: absolute;
@@ -42,7 +39,11 @@
         left: calc(100% - 14px);
         @include triangle($bgc:#6f6e6e, $angle:180deg);
         z-index: 10;
-    }
+      }
+      &:hover {
+        background-color: #f8f3f4;
+        transition: background-color .2s ease .2s;
+      }
       &_active {
         &::after {  // Triangle on right active
         content: "";
@@ -66,6 +67,14 @@
   font-weight: 400;
   text-align: left;
 
+  a {
+    text-decoration: none;
+    color:  #6f6e6e;
+    transition: color .2s ease .2s;
+    &:hover {
+      color: $accent;
+    }
+  }
 }
 
 .dropdown-menu_visible {
