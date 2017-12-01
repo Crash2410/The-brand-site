@@ -217,3 +217,158 @@
   }
 
 } // End of Range
+
+.product-sort {
+  width: 100%;
+  height: 50px;
+  background-color: #F3F3F3;
+  padding: 11px 0 0 8px;
+}
+
+.sort-form {
+  // @include flex-start-center;
+  display: block;
+
+  &__label {
+    height: 30px;
+    // @include flex-center-center;
+    display: inline-block;
+    position: static;
+    padding-left: 14px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid  $panel-inner-border;  // #e6e6e6;
+    color: $select-color;  // #6f6e6e;
+    font-size: 14px
+  }
+// Start of sort-form__select-sort-by
+  &__select-sort-by {
+    position: relative;
+    display: inline-block;
+    width: 86px;
+    height: 30px;
+    vertical-align: top;
+    margin-right: 12px;
+
+    select {
+      display: inline-block;
+      width: 100%;
+      height: 30px;
+      cursor: pointer;
+      padding: 0 0 0 12px;
+      margin-left: -4px;
+      outline: 0;
+      border: 1px solid $panel-default-border;  // #e6e6e6;
+      border-left: none;
+      border-radius: 0px;
+      background: #fff;
+      color: $select-color;  // #6f6e6e;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+    select::-ms-expand {
+            display: none;
+    }
+    select:hover,
+    select:focus {
+      color: $accent;  //  #f16d7f;
+      background: #f8f3f4;
+    }
+    select:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    // Start of select right Arrow
+    .select_arrow {
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        width: 0;
+        height: 0;
+        pointer-events: none;
+        border-style: solid;
+        border-width: 8px 5px 0px 5px;
+        border-color: #7B7B7B transparent transparent transparent;
+    }
+    // End of select right Arrow
+
+    select:hover ~ .select_arrow,
+    select:focus ~ .select_arrow {
+      border-top-color: $accent;
+    }
+    select:disabled ~ .select_arrow {
+      border-top-color: #CCCCCC;
+    }
+  }
+// End of sort-form__select-sort-by
+//
+  &__select-show {
+      position: relative;
+      display: inline-block;
+      width: 64px;
+      height: 30px;
+      vertical-align: top;
+      margin-right: 0;
+
+      select {
+        display: inline-block;
+        width: 100%;
+        height: 30px;
+        cursor: pointer;
+        margin-left: -4px;
+        padding: 0 0 0 12px;
+        outline: 0;
+        border: 1px solid #e6e6e6;
+        border-left: none;
+        border-radius: 0px;
+        background: #fff;
+        color: $select-color;  // #6f6e6e;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+
+      select::-ms-expand {
+        display: none;
+      }
+
+      select:hover,
+      select:focus {
+        color: $accent;  // #f16d7f;
+        background: #f8f3f4;
+      }
+
+      select:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+
+      // Start of select right Arrow
+      .select_arrow {
+          position: absolute;
+          top: 12px;
+          right: 15px;
+          width: 0;
+          height: 0;
+          pointer-events: none;
+          border-style: solid;
+          border-width: 8px 5px 0px 5px;
+          border-color: #7B7B7B transparent transparent transparent;
+      }
+      // End of select right Arrow
+
+      select:hover ~ .select_arrow,
+      select:focus ~ .select_arrow {
+        border-top-color: $accent;
+      }
+      select:disabled ~ .select_arrow {
+        border-top-color: #CCCCCC;
+      }
+    }
+
+} // End of .sort-form
+
