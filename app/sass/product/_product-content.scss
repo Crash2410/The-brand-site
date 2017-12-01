@@ -1,3 +1,5 @@
+@import "../index/_products.scss";
+// Display products
 .top-filter {
 
   h2 {
@@ -372,3 +374,105 @@
 
 } // End of .sort-form
 
+// Start of product rows
+// Change margin top
+.product-margin-top_50 {
+  margin-top: 50px;
+}
+
+// Start of pagenation
+.pagenation-container {
+  display: block;
+  width: 100%;
+  margin-top: 46px;
+  text-align: left;
+  &:before, &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+.pagenation {
+  display: inline-block;
+  width: auto;
+  height: 42px;
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid $list-group-border;  // #ebebeb;
+  border-radius: 4px;
+  vertical-align: top;
+
+  .left-chevron {
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    -webkit-clip-path: polygon(57% 0, 25% 50%, 59% 100%, 33% 100%, 0% 50%, 33% 0);
+    clip-path: polygon(57% 0, 25% 50%, 59% 100%, 33% 100%, 0% 50%, 33% 0);
+    background-color: #aaaaaa;
+    &:hover {
+      background-color: darken(#aaaaaa, 20%);
+      transition: background-color .2s ease .2s;
+    }
+  }
+  .right-chevron {
+    @extend .left-chevron;
+    transform: rotateZ(180deg);
+    background-color: $accent;
+  }
+}
+// Pager start
+.pager {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    padding: 0 9px;
+
+    a {
+      display: block;
+      text-decoration: none;
+      color:  #aaaaaa;
+      &:hover {
+        color: darken($accent, 5%);
+        transition: color .2s ease .2s;
+      }
+    }
+    a.pager__item_active {
+      color: $accent;
+    }
+  }
+}
+// Pager end
+// Start of btn
+.product-btn {
+  display: block;
+  width: 148px;
+  height: 44px;
+  margin-top: 46px;
+  margin-left: auto;
+  padding: 14px 46px;
+  vertical-align: middle;
+  border: 1px solid $accent;
+  border-radius: 2px;
+  background-color: #FFF;
+    &:hover {
+      background-color: #f8f3f4;
+      transition: background-color .2s ease .2s;
+    }
+
+  a {
+    color: $accent;
+    display: block;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+
+  }
+}
