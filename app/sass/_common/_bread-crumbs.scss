@@ -36,11 +36,23 @@
       text-transform: uppercase;
       &__item {
         display: inline-block;
-        &_accent {
-          color: $accent;
+
+        a {
+          text-decoration: none;
+          color: #636363;
+          display: block;
+          &:hover {
+            font-weight: 500;
+            color: darken(#636363, 25%);
+            transition: color .2s ease .2s;
+          }
         }
+      }
+      .b-c__item_active > a {
+        color: $accent;
       }
     }
   }
 }
+
 // End of Bread crumbs
