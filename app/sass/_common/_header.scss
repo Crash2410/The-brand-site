@@ -361,12 +361,11 @@
         //  padding-right: 0px;
         // }
         .arrow-drop-down-white {
-          width: 14px;
-          height: 10px;
+          width: 9px;
+          height: 9px;
           display: inline-block;
           vertical-align: middle;
-          background-image: url("../../img/socials-icons-sprite.png");
-          background-position: -192px -52px;
+          @include triangle($t-width:9px, $t-height:5px, $bgc:#fff, $angle:180deg);
         }
       }
     }
