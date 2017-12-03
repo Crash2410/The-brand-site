@@ -163,15 +163,14 @@
           //  padding-right: 8px;
           // }
           .dropdown-toggle-arrow-down {
-            width: 20px;
-            height: 8px;
             display: inline-block;
             margin: 0;
-            padding: 0 0 0 6px;
+            padding: 1px;
             vertical-align: middle;
             background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
-            background-image: url("../../img/socials-icons-sprite.png");
-            background-position: -192px -46px;
+            // background-image: url("../../img/socials-icons-sprite.png");
+            // background-position: -192px -46px;
+             @include triangle($t-width:10px, $t-height:5px, $bgc:#838383, $angle:180deg);
           }
         }
       }
