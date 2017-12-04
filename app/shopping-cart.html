@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Product</title>
+    <meta name="description" content="e-shop">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="css/shopping-cart.min.css">
+  </head>
+<body>
+    <div class="container container-theme"><!-- header -->
+      <header class="header">
+        <div class="header-top">
+          <a href="#" class="brand-link">
+            <div class="logotype logotype_inline logotype_mbr">
+              <img class="logotype__img" src="img/brand-logo.png"
+                alt="brand logotype" width="59"></img>
+              <div class="logotype__name">
+                Bran<span class="logotype__name-accent">d</span>
+              </div>
+            </div>
+          </a><!--
+           --><div class="header-top-form">
+            <form action="handler.php" method="post" class="search-form">
+              <div class="search-form-inputgroup">
+                <ul class="search-form-dropdown-menu">
+                  <li>
+                    <a href="#" class="dropdown-toggle">
+                      Browse
+<!--                       <span class="fa fa-caret-down"
+                      title="Toggle dropdown menu"></span> -->
+                      <span class="dropdown-toggle-arrow-down"
+                      title="Toggle dropdown menu"></span>
+                    </a>
+                    <ul class="mega-menu mega-menu_hidden"><!-- mega-menu start, Add mega-menu_visible -->
+                      <li class="mega-menu__section">
+                        <ul class="nav-mm"><span class="nav-mm__title">Men</span>
+                            <li class="nav-mm__item"><a href="#">Dresses</a></li>
+                            <li class="nav-mm__item"><a href="#">Tops</a></li>
+                            <li class="nav-mm__item"><a href="#">Sweaters/Knits</a></li>
+                            <li class="nav-mm__item"><a href="#">Jackets/Coats</a></li>
+                            <li class="nav-mm__item"><a href="#">Blazers</a></li>
+                            <li class="nav-mm__item"><a href="#">Denim</a></li>
+                            <li class="nav-mm__item"><a href="#">Leggings/Pants</a></li>
+                            <li class="nav-mm__item"><a href="#">Skirts/Shorts</a></li>
+                            <li class="nav-mm__item"><a href="#">Accessories </a></li>
+                        </ul>
+                      </li>
+                      <li class="mega-menu__section">
+                        <ul class="nav-mm"><span class="nav-mm__title">Women</span>
+                            <li class="nav-mm__item"><a href="#">Dresses</a></li>
+                            <li class="nav-mm__item"><a href="#">Tops</a></li>
+                            <li class="nav-mm__item"><a href="#">Sweaters/Knits</a></li>
+                            <li class="nav-mm__item"><a href="#">Jackets/Coats</a></li>
+                        </ul>
+                      </li>
+                      <li class="mega-menu__section">
+                        <ul class="nav-mm"><span class="nav-mm__title">Kids</span>
+                            <li class="nav-mm__item"><a href="#">Dresses</a></li>
+                            <li class="nav-mm__item"><a href="#">Tops</a></li>
+                            <li class="nav-mm__item"><a href="#">Sweaters/Knits</a></li>
+                        </ul>
+                      <li class="mega-menu__section">
+                        <ul class="nav-mm"><span class="nav-mm__title">Accesories</span>
+                            <li class="nav-mm__item"><a href="#">Dresses</a></li>
+                            <li class="nav-mm__item"><a href="#">Tops</a></li>
+                            <li class="nav-mm__item"><a href="#">Sweaters/Knits</a></li>
+                            <li class="nav-mm__item"><a href="#">Jackets/Coats</a></li>
+                        </ul>
+                      </li>
+                      <a href="#">
+                        <div class="mega-menu__img">
+                          <img src="img/super-sale.jpg" alt="Super sale"
+                            width="256" height="118">
+                            <div class="mega-menu__img_title">Super <br> sale!</div>
+                        </div>
+                      </a>
+                    </ul><!--/ mega-menu -->
+                  </li>
+                </ul>
+                <input type="text" id="search"
+                placeholder="Search for Item..."
+                class="search-form-input">
+                <div class="search-form-sign">
+                  <!-- <i class="fa fa-search"></i> -->
+                </div>
+              </div>
+            </form>
+          </div><!--
+          --><div class="header-login">
+            <div class="header-login-basket">
+              <img src="img/basket.png" alt="basket" width="32"
+                height="29" class="header-login-basket-img">
+              <div
+                class="header-login-basket-counter header-login-basket-counter_hidden">
+                1
+              </div>
+            </div>
+            <ul class="header-login-button-menu">
+              <li>
+                <a href="#" class="button btn-account">
+                  My Account
+<!--                   <span class="fa fa-caret-down"
+                  title="Toggle dropdown menu"></span> -->
+                <span class="arrow-drop-down-white"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div><!--/ header -->
+    <div class="container container-theme"><!-- Top navigation menu -->
+      <div class="brand-content-relative">
+        <nav class="brand-nav-pos-abs brand-nav-pos-static">
+          <ul class="brand-nav">
+            <li class="brand-nav-item"><a href="index.html">Home</a></li>
+            <li class="brand-nav-item"><a href="product.html">Man</a></li>
+            <li class="brand-nav-item"><a href="#">Women</a></li>
+            <li class="brand-nav-item"><a href="#">Kids</a></li>
+            <li class="brand-nav-item"><a href="#">Accoseries</a></li>
+            <li class="brand-nav-item"><a href="#">Featured</a></li>
+            <li class="brand-nav-item"><a href="#">Hot Deals</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div><!--/ Top navigation menu -->
+    <div class="container container-theme"><!-- _bread-crumbs -->
+        <section class="container-theme-product container-theme-bread-crumb">
+            <div class="container-product bread-crumbs">
+                <div class="bread-crumbs__title">
+                    New arrivals
+                </div>
+                <div class="bread-crumbs__content">
+                    <ul class="b-c">
+                        <li class="b-c__item"><a href="index.html">Home / </a></li>
+                        <li class="b-c__item"><a href="product.html">Men / </a></li>
+                        <li class="b-c__item b-c__item_active"><a href="#">New Arrivals</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div><!--/ bread-crumbs -->
+    <div class="container container-theme"><!-- Begin container of `product detail` -->
+      <section class="details-panel"><!-- details-panel -->
+        <div class="details-panel-header"><!-- details-panel-header -->
+          <div class="details-panel-header__name">
+            Product details
+          </div>
+          <div class="details-panel-header__price">
+            Unite price
+          </div>
+          <div class="details-panel-header__quantity">
+            Quantity
+          </div>
+          <div class="details-panel-header__shipping">
+            Shipping
+          </div>
+          <div class="details-panel-header__subtotal">
+            Subtotal
+          </div>
+          <div class="details-panel-header__action">
+            Action
+          </div>
+        </div><!--/ details-panel-header -->
+        <div class="details-panel-item"><!-- details-panel-item. 1st Row. Flex container -->
+          <div class="details-panel-item__description">
+            <img src="img/product_details_01.jpg" width="100" height="115">
+            <div class="product-item">
+              <div class="product-item__name">
+                Mongo people t-shirt
+              </div>
+              <div class="product-item__description">
+                <span class="product-item__description_bold">Color:</span> Red<br>
+                <span class="product-item__description_bold">Size:</span> XII
+              </div>
+            </div>
+          </div><!-- End of item__description -->
+          <div class="details-panel-item__price">
+            &#36;150
+          </div>
+          <div class="details-panel-item__quantity">
+            <span class="quantity-border">2</span>
+          </div>
+          <div class="details-panel-item__shipping">
+            Free
+          </div>
+          <div class="details-panel-item__subtotal">
+            &#36;300
+          </div>
+          <div class="details-panel-item__action">
+            <a href="#">&#10006;</a>
+          </div>
+        </div><!--/ details-panel-item 1st Row -->
+        <div class="details-panel-item"><!-- details-panel-item. 2nd Row. Flex container -->
+          <div class="details-panel-item__description">
+            <img src="img/product_details_02.jpg" width="100" height="115">
+            <div class="product-item">
+              <div class="product-item__name">
+                Mongo people t-shirt
+              </div>
+              <div class="product-item__description">
+                <span class="product-item__description_bold">Color:</span> Red<br>
+                <span class="product-item__description_bold">Size:</span> XI
+              </div>
+            </div>
+          </div><!-- End of item__description -->
+          <div class="details-panel-item__price">
+            &#36;150
+          </div>
+          <div class="details-panel-item__quantity">
+            <span class="quantity-border">2</span>
+          </div>
+          <div class="details-panel-item__shipping">
+            Free
+          </div>
+          <div class="details-panel-item__subtotal">
+            &#36;300
+          </div>
+          <div class="details-panel-item__action">
+           <a href="#">&#10006;</a>
+          </div>
+        </div><!--/ details-panel-item 2nd Row -->
+        <div class="details-panel-item"><!-- details-panel-item. 3d Row. Flex container -->
+          <div class="details-panel-item__description">
+            <img src="img/product_details_03.jpg" width="100" height="115">
+            <div class="product-item">
+              <div class="product-item__name">
+                Mongo people t-shirt
+              </div>
+              <div class="product-item__description">
+                <span class="product-item__description_bold">Color:</span> Red<br>
+                <span class="product-item__description_bold">Size:</span> XI
+              </div>
+            </div>
+          </div><!-- End of item__description -->
+          <div class="details-panel-item__price">
+            &#36;150
+          </div>
+          <div class="details-panel-item__quantity">
+            <span class="quantity-border">2</span>
+          </div>
+          <div class="details-panel-item__shipping">
+            Free
+          </div>
+          <div class="details-panel-item__subtotal">
+            &#36;300
+          </div>
+          <div class="details-panel-item__action">
+            <a href="#">&#10006;</a>
+          </div>
+        </div><!--/ details-panel-item 3d Row -->
+        <div class="buttons-section">
+          <button class="btn-action">Clear shopping cart</button>
+          <button class="btn-action">Continue shopping</button>
+        </div>
+
+      </section><!--/ details-panel -->
+
+    </div><!-- End container of `product detail` -->
+      <div class="container container-theme"><!-- Begin container of `.subscribe` -->
+        <div class="subscribe subscribe-margin-top-0"><!-- Begin subscrib -->
+          <img class="subscribe-bgc-image"
+            src="img/subscribe-background.jpg" width="100%"
+            alt="subscribe background image">
+          <div class="subscribe-left">
+          </div>
+          <img class="subscribe-bloger-image"
+            src="img/subscribe-small-img.png" width="83" alt="subscribe bloger's image">
+          <div class="subscribe-blog">
+            <div class="subscribe-blog__text">
+              "Commodi vitae dignissimos illum quasi quas officia, itaque sed cumque optio,
+              odio perferendis autem necessitatibus modi architecto nemo temporibus."
+            </div>
+            <div class="subscribe-blog__author_accent">
+              Bin Burhan
+            </div>
+            <div class="subscribe-blog__author">
+              Dhaka, Bd
+            </div>
+            <div class="subscribe-blog__decor-1"></div>
+            <div class="subscribe-blog__decor-2"></div>
+            <div class="subscribe-blog__decor-1"></div>
+            </div><!-- End of `.subscribe-blog` -->
+            <div class="subscribe-right">
+              <div class="subscribe-h">
+                <div class="subscribe-h__title">Subscribe</div>
+                <div class="subscribe-h__text">for our newsletter and promotion</div>
+              </div>
+              <form action="handler.php"  class="subscribe-form">
+                <div class="subscribe-form__input">
+                  <input type="email" placeholder="Enter Your Email">
+                </div>
+                <div class="subscribe-form__submit-btn">
+                  <button type="submit"><a href="">Subscribe</a></button>
+                </div>
+              </form>
+            </div>
+          </div><!-- End of `.subscribe` -->
+      </div><!-- End container of `subscribe` -->
+  <footer>
+    <div class="container container-theme"><!-- Begin container of `b-footer-top` -->
+      <div class="b-footer-top"><!-- Begin b-footer-top -->
+        <div class="row"><!-- Begin raw of b-footer-top -->
+          <div class="col-md-6"><!-- 1st -->
+            <a href="#" class="brand-link">
+              <div class="logotype logotype_mb">
+                <img class="logotype__img" src="img/brand-logo.png"
+                  alt="brand logotype" width="59"></img>
+                <div class="logotype__name">
+                  Bran<span class="logotype__name-accent">d</span>
+                </div>
+              </div>
+            </a>
+            <div class="footer-text">
+              <p>Ipsum dolor sit amet, consectetur adipisicing elit. Possimus placeat, molestias laboriosam eum libero dolores quaerat, odio expedita necessitatibus quae, ex autem, quidem quibusdam consectetur praesentium doloribus dolore. Quam, fugiat.</p>
+              <p class="footer-text-mt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam animi ullam veritatis quam repudiandae, eaque odit minima temporibus a vero incidunt eius, ea ducimus, excepturi?</p>
+            </div>
+          </div><!--/ 1st -->
+          <div class="col-md-2"><!-- 2nd -->
+            <div class="footer-title">
+              Company
+            </div>
+            <ul class="menu-v">
+              <li class="menu-v__item">
+                <a href="#">Home</a>
+              </li>
+              <li class="menu-v__item">
+                <a href="#">Shop</a>
+              </li>
+              <li class="menu-v__item">
+                <a href="#">About</a>
+              </li>
+              <li class="menu-v__item">
+                <a href="#">How It Works</a>
+              </li>
+              <li class="menu-v__item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div><!--/ 2nd -->
+          <div class="col-md-2"><!-- 3d -->
+            <div class="footer-title">
+              Information
+            </div>
+            <ul class="menu-v">
+              <li class="menu-v__item">
+                <a href="">Tearms &amp; Condition</a>
+              </li>
+              <li class="menu-v__item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="menu-v__item">
+                <a href="#">How to Buy</a>
+              </li>
+              <li class="menu-v__item">
+                <a href="#">How to Sell</a>
+              </li>
+              <li class="menu-v__item">
+                <a href="#">Promotion</a>
+              </li>
+            </ul>
+          </div><!--/ 3d -->
+          <div class="col-md-2"><!-- 4th -->
+            <div class="footer-title">
+              Shop category
+            </div>
+            <ul class="menu-v">
+              <li class="menu-v__item">
+                <a href="#">Men</a>
+              </li>
+              <li class="menu-v__item">
+                <a href="#">Women</a>
+              </li>
+              <li class="menu-v__item">
+                <a href="#">Child</a>
+              </li>
+              <li class="menu-v__item">
+                <a href="#">Apparel</a>
+              </li>
+              <li class="menu-v__item">
+                <a href="#">Browse All</a>
+              </li>
+            </ul>
+          </div><!--/ 4th -->
+        </div><!-- End raw of b-footer-top -->
+      </div><!-- End of b-footer-top -->
+    </div><!-- End of container `b-footer-top` -->
+    <div class="container container-theme"><!-- Begin container of `b-footer-bottom` -->
+      <div class="b-footer-bottom"><!-- Begin b-footer-bottom -->
+        <div class="row">
+          <div class="b-footer-bottom-content">
+            <div class="col-md-10 col-md-ml">
+              <div class="b-footer-bottom-text">
+                  &copy; 2017 Brand All Rights Reserved.
+              </div>
+            </div>
+            <div class="col-socials"><!-- Begin of social icons -->
+<!--               <a href="https://www.facebook.com/" target="_blank"
+                class="social-icon-facebook social-icon-facebook_position">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a> -->
+              <a href="https://www.facebook.com/" target="_blank"
+                class="social-icon-facebook social-icon-facebook_position">
+              </a>
+<!--               <a href="https://twitter.com/" target="_blank"
+                class="social-icon-twitter social-icon-twitter_position">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a> -->
+              <a href="https://twitter.com/" target="_blank"
+                class="social-icon-twitter social-icon-twitter_position">
+              </a>
+<!--               <a href="https://www.linkedin.com/" target="_blank"
+                class="social-icon-linkedin social-icon-linkedin_position">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a> -->
+              <a href="https://www.linkedin.com/" target="_blank"
+                class="social-icon-linkedin social-icon-linkedin_position">
+              </a>
+<!--               <a href="https://pinterest.com/" target="_blank"
+                class="social-icon-pinterest social-icon-pinterest_position">
+                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+              </a> -->
+              <a href="https://pinterest.com/" target="_blank"
+                class="social-icon-pinterest social-icon-pinterest_position">
+              </a>
+<!--               <a href="https://plus.google.com/" target="_blank"
+                class="social-icon-google-plus">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+              </a> -->
+              <a href="https://plus.google.com/" target="_blank"
+                class="social-icon-google-plus">
+              </a>
+            </div><!-- End of social icons -->
+         </div>
+        </div><!-- End of row `b-footer-bottom-content` -->
+      </div><!-- End of `b-footer-bottom` -->
+    </div><!-- End container of `b-footer-bottom` container  -->
+  </footer>
+    <script src="js/scripts.min.js"></script>
+</body>
+</html>
