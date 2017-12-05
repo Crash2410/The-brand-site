@@ -3526,6 +3526,17 @@ body {
   .header-login-basket {
     position: relative;
     display: inline-block; }
+    .header-login-basket a {
+      display: block;
+      padding: 7px; }
+      .header-login-basket a:hover {
+        cursor: pointer;
+        background-color: #f8f3f4;
+        -webkit-border-radius: 1px;
+                border-radius: 1px;
+        -webkit-transition: background-color .2s ease .1s;
+        -o-transition: background-color .2s ease .1s;
+        transition: background-color .2s ease .1s; }
   .header-login-basket-img {
     width: 32px;
     height: 29px; }
@@ -3556,7 +3567,7 @@ body {
     list-style: none;
     padding: 0;
     display: inline-block;
-    margin-left: 26px; }
+    margin-left: 19px; }
   .header-login .btn-account {
     padding: 12px 0;
     font-size: 15px;

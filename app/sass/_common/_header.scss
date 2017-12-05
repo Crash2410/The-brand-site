@@ -310,6 +310,17 @@
       &-basket {
         position: relative;
         display: inline-block;
+
+        a {
+          display: block;
+          padding: 7px;
+          &:hover {
+            cursor: pointer;
+            background-color:  opacify(#f8f3f4, .5);
+            border-radius: 1px;
+            transition: background-color .2s ease .1s;
+          }
+        }
       }
 
       &-basket-img {
@@ -344,7 +355,7 @@
         list-style: none;
         padding: 0;
         display: inline-block;
-        margin-left: 26px;
+        margin-left: 19px;
       }
       .btn-account {
         padding: 12px 0;
