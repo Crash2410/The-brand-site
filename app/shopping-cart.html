@@ -100,12 +100,14 @@
           </div><!--
           --><div class="header-login">
             <div class="header-login-basket">
-              <img src="img/basket.png" alt="basket" width="32"
-                height="29" class="header-login-basket-img">
-              <div
-                class="header-login-basket-counter header-login-basket-counter_hidden">
-                1
-              </div>
+              <a href="/shopping-cart.html">
+                <img src="img/basket.png" alt="basket" width="32"
+                  height="29" class="header-login-basket-img">
+                <div
+                  class="header-login-basket-counter header-login-basket-counter_hidden">
+                  1
+                </div>
+              </a>
             </div>
             <ul class="header-login-button-menu">
               <li>
@@ -264,8 +266,79 @@
         <div class="buttons-section">
           <button class="btn-action">Clear shopping cart</button>
           <button class="btn-action">Continue shopping</button>
-        </div>
+        </div><!--/ buttons-section -->
+        <div class="checkout"><!-- checkout -->
+          <div class="column-33 column-33_padding-right-15"><!-- 1st column -->
+            <div class="checkout-title">
+              Shipping address
+            </div>
+            <form class="shopping-form" action="/action-page.php" method="post"
+              name="shopping_form">
+              <div class="shopping-form__select">
+                <select>
+                    <option>--Select--</option>
+                    <option>Saint Petersburg</option>
+                    <option>Moscow</option>
+                    <option>Novosibirsk</option>
+                    <option>Omsk</option>
+                </select>
+                <div class="shopping-form__arrow">
+                </div>
+              </div>
+              <div class="shopping-form__input">
+                <input type="text" name="shopping_form_state"
+                  placeholder="State">
+              </div>
+              <div class="shopping-form__input">
+                <input type="text" name="shopping_form_zip"
+                  placeholder="Postcode / Zip">
+              </div>
+              <button type="submit" class="shopping-form__btn">
+                Get a quote
+              </button>
+            </form>
+          </div><!--/ 1st column -->
+          <div class="column-33 column-33_padding-15"><!-- 2nd column -->
+            <div class="checkout-title">
+              Coupon discount
+            </div>
+            <div class="checkout-text">
+              Enter your coupon code if you have one
+            </div>
+            <form class="shopping-form" action="/action-page.php" method="post"
+              name="shopping_form_coupon">
+              <div class="shopping-form__input shopping-form__input_mb26">
+              <input type="text" name="shopping_form_coupon_code"
+                  placeholder="Coupon code">
+              </div>
+              <button type="submit" class="shopping-form__btn">
+                Applay coupon
+              </button>
+            </form>
+          </div><!--/ 2nd column -->
+          <div class="column-33 column-33_padding-left-15"><!-- 3d column -->
+            <div class="checkout-sums">
+              <div class="checkout-total">
+                <div class="checkout-total__title">
+                  Sub total
+                </div>
+                <div class="checkout-total__price">
+                  &#36;900
+                </div><br>
+                <div class="checkout-total__btitle">
+                  Grand total
+                </div>
+                <div class="checkout-total__bprice">
+                  &#36;900
+                </div>
+              </div>
+              <button class="checkout-sums__btn">
+                Proceed to checkout
+              </button>
+            </div>
 
+          </div><!--/ 3d column -->
+        </div><!--/ checkout -->
       </section><!--/ details-panel -->
 
     </div><!-- End container of `product detail` -->

@@ -21,6 +21,14 @@
   align-content: flex-start;
 }
 
+@mixin flex-start-center {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+}
+
 @mixin flex-around-start {
   display: flex;
   flex-flow: row wrap;
@@ -65,8 +73,8 @@
 }
 
 @mixin triangle($t-width:8px, $t-height:5px, $bgc:#fff, $angle:0deg) {
-    width: 0;
-    height: 0;
+    width: ($t-width + 1px);
+    height: ($t-height + 2px);
     $tw: $t-width/2;
     border-style: solid;
     border-width: 0 $tw $t-height $tw;

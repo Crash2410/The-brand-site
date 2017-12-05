@@ -1,4 +1,4 @@
-@import "../index/_products.scss";
+@import "../_index/_products.scss";
 // Display products
 .top-filter {
 
@@ -475,4 +475,31 @@
     text-decoration: none;
 
   }
+}
+// End of button View All
+// Begin of advertisement
+.advertisement {
+  margin-top: 110px;
+  background-color: #000;
+  color: #dedede;
+  padding-top: 90px;
+  padding-bottom: 102px;
+  @include flex-center-center;
+
+  &__item {
+    width: 310px;
+    margin: 0 40px;
+    img {
+      width: 47px;
+      height: auto;
+      margin-left: calc(50% - 24px);
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+}
+// End of Advertisement
+.subscribe-margin-top-0 {
+  margin-top: 0px;
 }

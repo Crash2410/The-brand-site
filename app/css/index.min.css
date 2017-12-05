@@ -3402,18 +3402,22 @@ body {
         color: #222;
         text-decoration: none; }
       .search-form-dropdown-menu li .dropdown-toggle-arrow-down {
-        width: 20px;
-        height: 8px;
         display: inline-block;
         margin: 0;
-        padding: 0 0 0 6px;
+        padding: 1px;
         vertical-align: middle;
         background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f5f5f5));
         background: -webkit-linear-gradient(top, #f9f9f9 0%, #f5f5f5 100%);
         background: -o-linear-gradient(top, #f9f9f9 0%, #f5f5f5 100%);
         background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
-        background-image: url("../../img/socials-icons-sprite.png");
-        background-position: -192px -46px; }
+        width: 11px;
+        height: 7px;
+        border-style: solid;
+        border-width: 0 5px 5px 5px;
+        border-color: transparent transparent #838383 transparent;
+        -webkit-transform: rotateZ(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotateZ(180deg); }
   .search-form .mega-menu {
     width: 846px;
     height: 308px;
@@ -3558,12 +3562,18 @@ body {
     font-size: 15px;
     width: 130px; }
     .header-login .btn-account .arrow-drop-down-white {
-      width: 14px;
-      height: 10px;
+      width: 9px;
+      height: 9px;
       display: inline-block;
       vertical-align: middle;
-      background-image: url("../../img/socials-icons-sprite.png");
-      background-position: -192px -52px; }
+      width: 10px;
+      height: 7px;
+      border-style: solid;
+      border-width: 0 4.5px 5px 4.5px;
+      border-color: transparent transparent #fff transparent;
+      -webkit-transform: rotateZ(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotateZ(180deg); }
 
 .brand-content-relative {
   position: relative;
@@ -3853,7 +3863,8 @@ body {
   margin: 0 auto;
   display: block;
   text-align: center;
-  z-index: 11; }
+  z-index: 11;
+  margin-bottom: 97px; }
 
 .banner {
   display: inline-block;
@@ -3984,7 +3995,6 @@ body {
   margin-bottom: 50px; }
 
 .subscribe {
-  margin-top: 97px;
   z-index: 1;
   position: relative; }
 
