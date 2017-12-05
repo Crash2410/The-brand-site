@@ -1,7 +1,7 @@
 .details-panel {
   width: 1140px;
   margin: 0 auto;
-  padding: 88px 15px 66px 15px;
+  padding: 88px 15px 80px 15px;
   &-header {
     @include flex-between-start-between;
     padding-bottom: 20px;
@@ -127,19 +127,41 @@
   margin-top: 69px;
   width: 16px;
   height: 16px;
-  padding-left: 2px;
-  vertical-align: top;
-  border-radius: 8px;
-  background-color: #c0c0c0;
-  color: #fff;
-  font-weight: 300;
+  position: relative;
   a {
-    text-decoration: none;
-    color: #fff;
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+
     &:hover {
-      color: lighten($accent, 15%);
+      color: $accent;
+      background-color: #fff;
+      border-radius: 9px;
+      width: 18px;
+      height: 18px;
       transition: color .2s ease .2s;
+    }
+  } // End a
+
+  &:after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    z-index: 1;
+    border-radius: 8px;
+    background-color: #c0c0c0;
+    &:hover {
+      background-color: #fff;
     }
   }
 }
@@ -160,6 +182,255 @@
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+    &:hover {
+      background-color: $accent;
+      color: #fff;
+      transition: background-color .2s ease .2s;
+    }
   }
 }
 // End action button section
+// Start checkout
+.column-33 {
+  width: 33.3333%;
+  &_padding-right-15 {
+    padding-right: 15px;
+  }
+  &_padding-left-15 {
+    padding-left: 15px;
+  }
+    &_padding-15 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+.checkout {
+  @include flex-between-start-between;
+  // flex-flow: row wrap; justify-content: space-between; align-items: start;
+  // align-content: space-between;
+
+  &-title {
+    color:  #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 44px;
+  }
+} // End of .checkout
+// Begin shipping form select
+.shopping-form__select {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 100%;
+
+  select {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 16px 18px;
+    outline: 0;
+    border: 1px solid #eaeaea;
+    border-radius: 0px;
+    background: #FFF;
+    color: #b1b1b1;
+    font-size: 15px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    option {
+      color: #222222;
+      font-size: 15px;
+    }
+
+    &:-ms-expand {
+    display: none;
+    }
+
+    &:hover {
+      color: #222222;
+      background: #F8E5E8;
+      transition: background .2s ease .1s;
+    }
+    &:focus {
+      color: #222222;
+      background: #FFF;
+    }
+    &:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+  } // End select
+
+  select:hover ~ &__arrow,
+  select:focus ~ &__arrow {
+      border-top-color: #909090;
+  }
+
+  select:disabled ~ &__arrow {
+      border-top-color: #F0ECEC;
+  }
+
+}
+// End .shopping-form__select
+// Arrow
+.shopping-form__arrow {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 8px;
+    height: 5px;
+    z-index: 100;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0px 5px;
+    border-color: #BDBDBD transparent transparent transparent;
+}  // End of Arrow
+.shopping-form__input {
+  position: static;
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 100%;
+
+  input {
+    padding: 16px 18px;
+    outline: 0;
+    border: 1px solid #eaeaea;
+    border-radius: 0px;
+    background: #FFF;
+    color: #b1b1b1;
+    font-size: 15px;
+
+    &:hover {
+      color: #222222;
+      background: #F8E5E8;
+      transition: background .2s ease .1s;
+    }
+    &:focus {
+      color: #222222;
+      background: #FFF;
+    }
+    &:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+
+} // End of .shopping-form__input
+.shopping-form__btn {
+  width: auto;
+  height: auto;
+  padding: 12px 14px;
+  color:  #4a4a4a;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid #eaeaea;
+  background-color: #FFF;
+
+  &:hover {
+    // background-color: lighten($accent, 2%);
+    background-color: $accent;
+    color: #fff;
+    transition: background .2s ease .1s;
+  }
+}
+// End of .shopping-form
+// Begin of Coupon discount (2d column)
+.column-33_left-padding {
+  padding-left: 15px;
+}
+
+.checkout-text {
+  color:  #000000;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 6px;
+  margin-bottom: 24px;
+}
+.shopping-form__input_mb26 {
+  margin-bottom: 26px;
+}
+// End of coupon discount
+// Start checkout-total
+.checkout-sums {
+  background-color:  #f5f3f3;
+  width: 360px;
+  height: 214px;
+  padding: 42px;
+  margin-right: -15px;
+}
+
+.checkout-total {
+  display: block;
+  text-align: right;
+  border-bottom: 1px solid #e2e2e2;
+
+  &__title {
+    display: inline-block;
+    padding-right: 16px;
+    margin-bottom: 10px;
+    color:  #4a4a4a;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: right;
+  }
+
+  &__price {
+    display: inline-block;
+    margin-bottom: 10px;
+    color:  #4a4a4a;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: right;
+  }
+
+  &__btitle {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding-right: 16px;
+    color:  #222222;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+  }
+
+  &__bprice {
+      display: inline-block;
+      margin-bottom: 18px;
+      color:  #f16d7f;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: right;
+    }
+}
+// End checkout-total
+// Start checkout-sums__btn
+.checkout-sums__btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 14px 38px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: top;
+  color:  #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: $accent;
+
+  &:hover {
+    background-color: #FF7373;
+    transition: background-color .2s ease .1s;
+  }
+}
+// End checkout-sums__btn
