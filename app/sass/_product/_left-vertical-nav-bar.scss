@@ -44,17 +44,82 @@
         background-color: #f8f3f4;
         transition: background-color .2s ease .2s;
       }
-      &_active {
-        &::after {  // Triangle on right active
-        content: "";
-        position: absolute;
-        top: 18.5px;
-        left: calc(100% - 14px);
-        @include triangle($bgc:$accent, $angle:0deg);
-        z-index: 10;
-        }
-      }
   }
+  // Toggle of li Category
+  // Hiding input
+  #category-toggle {
+    display: none;
+  }
+  // Checkbox not active - hidding Category item
+  #category-toggle + .p-nav__title + .dropdown-menu {
+    display: none;
+  }
+  // View of .p-nav__title if Checkbox active
+  #category-toggle:checked + .p-nav__title {
+    &::after {  // Triangle on right active
+      content: "";
+      position: absolute;
+      top: 18.5px;
+      left: calc(100% - 14px);
+      @include triangle($bgc:$accent, $angle:0deg);
+      z-index: 10;
+    }
+  }
+  // Checkbox active - displaying Category item
+  #category-toggle:checked + .p-nav__title + .dropdown-menu {
+    display: block;
+  }
+ // End of Toggable li Category
+  // Toggle of li Brend
+  // Hiding input
+  #brand-toggle {
+    display: none;
+  }
+  // Checkbox not active - hidding Brend item
+  #brand-toggle + .p-nav__title + .dropdown-menu {
+    display: none;
+  }
+  // View of .p-nav__title if Checkbox active
+  #brand-toggle:checked + .p-nav__title {
+    &::after {  // Triangle on right active
+      content: "";
+      position: absolute;
+      top: 18.5px;
+      left: calc(100% - 14px);
+      @include triangle($bgc:$accent, $angle:0deg);
+      z-index: 10;
+    }
+  }
+  // Checkbox active - displaying Brend item
+  #brand-toggle:checked + .p-nav__title + .dropdown-menu {
+    display: block;
+  }
+ // End of Toggable li Brend
+  // Toggle of li Desiner
+  // Hiding input
+  #desiner-toggle {
+    display: none;
+  }
+  // Checkbox not active - hidding Desiner item
+  #desiner-toggle + .p-nav__title + .dropdown-menu {
+    display: none;
+  }
+  // View of .p-nav__title if Checkbox active
+  #desiner-toggle:checked + .p-nav__title {
+    &::after {  // Triangle on right active
+      content: "";
+      position: absolute;
+      top: 18.5px;
+      left: calc(100% - 14px);
+      @include triangle($bgc:$accent, $angle:0deg);
+      z-index: 10;
+    }
+  }
+  // Checkbox active - displaying Desiner item
+  #desiner-toggle:checked + .p-nav__title + .dropdown-menu {
+    display: block;
+  }
+ // End of Toggeble li Desiner
 }
 
 .dropdown-menu {
