@@ -12,6 +12,7 @@
 // Star of Footer text 1st column
 .footer-text {
   color: darken(#898989, 5%);
+  font-family: $font-family-base-light;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -23,9 +24,10 @@
 }
 
 .footer-title {
+  font-family: $font-family-base-bold;
   color: $accent;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 45px;
@@ -53,8 +55,8 @@
 // End of Top of footer
 // Start of Footer - social links
 // Move to left -15px
-.col-md-ml {
-  margin-left: -15px;
+.col-md-m15 {
+  margin: 0 -15px;
 }
 
 .b-footer-bottom {
@@ -63,16 +65,14 @@
 
   &-content {
     max-width: 1140px;
-    height: 80px;
+    height: auto;
     margin: 0 auto;
-    padding-top: 31px;
+    padding: 25px 0;
 
     &-text {
-      height: 100%;
-      padding: 0;
+      height: auto;
       color: #7a7a7a;
       font-size: 16px;
-      font-weight: 400;
       line-height: 64px;
       text-align: left;
     }
@@ -80,7 +80,7 @@
 }
 // Social icons begin
 .col-socials {
-  max-with: auto;
+  max-width: 100%;
 }
 // Fa icons
 // .social-icon-facebook {

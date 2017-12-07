@@ -22,7 +22,12 @@ $brand-danger: #bf5329;
 
 // Typography
 // @fa-font-path: "../fonts/$font-icon/";
-$font-family-sans-serif: "Lato", sans-serif;
+$font-family-sans-serif: "LatoLatinRegular", sans-serif;
+$font-family-base-light: "LatoLatinLight", sans-serif;
+$font-family-base-normal: "LatoLatinRegular", sans-serif;
+$font-family-base-italic: "LatoLatinItalic", sans-serif;
+$font-family-base-bold: "LatoLatinBold", sans-serif;  // 700
+$font-family-base-black: "LatoLatinBlack", sans-serif;  // 900
 $font-icon: "$font-icon";
 $font-size-base: 14px;
 $line-height-base: 1.5;

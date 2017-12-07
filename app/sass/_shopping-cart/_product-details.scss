@@ -169,21 +169,10 @@
   margin-bottom: 64px;
   @include flex-between-start-between;
   .btn-action {
-    width: 235px;
-    height: 50px;
-    display: inline-block;
-    border: solid 1px $btn-border-gray;
-    background-color: #FFF;
-    color:  #4a4a4a;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    &:hover {
-      background-color: $accent;
-      color: #fff;
-      transition: background-color .2s ease .2s;
-    }
+    // width: 235px;
+    // height: 50px;
+    padding: 16px 40px;
+// Use _common-style .button-light-grey
   }
 }
 // End action button section
@@ -321,22 +310,8 @@
   width: auto;
   height: auto;
   padding: 12px 14px;
-  color:  #4a4a4a;
   font-size: 13px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  white-space: nowrap;
-  vertical-align: middle;
-  border: 1px solid #eaeaea;
-  background-color: #FFF;
-
-  &:hover {
-    // background-color: lighten($accent, 2%);
-    background-color: $accent;
-    color: #fff;
-    transition: background .2s ease .1s;
-  }
+// Use common-style .button_theme-light-grey
 }
 // End of .shopping-form
 // Begin of Coupon discount (2d column)
@@ -420,14 +395,31 @@
   text-align: center;
   text-transform: uppercase;
   vertical-align: top;
-  color:  #ffffff;
+  color:  #fff;
   font-size: 16px;
   font-weight: 700;
   background-color: $accent;
+  transition: background-color .1s ease .1s;
 
-  &:hover {
-    background-color: #FF7373;
-    transition: background-color .2s ease .1s;
-  }
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: lighten($accent, 5%);
+      cursor: pointer;
+      &::after {
+        opacity: .22;
+      }
+    }
+
+    &:active {
+      background-color: darken($accent, 5%);
+      &::after {
+        opacity: .32;
+      }
+    }
 }
 // End checkout-sums__btn

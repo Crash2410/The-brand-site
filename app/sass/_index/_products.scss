@@ -13,6 +13,7 @@
 
 .products-header__title {
   text-align: center;
+  font-family: $font-family-base-bold;
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 0;
@@ -114,19 +115,21 @@
   color: #fff;
   margin-left: calc(50% - 106px);
   margin-top: 79px;
-  &:hover {
-    background-color: lighten($accent, 5%);
-    cursor: pointer;
-    transition: background-color 0.25s ease;
-    &::after {
-        opacity: .22;
-    }
-  }
+  // &:hover {
+  //   background-color: lighten($accent, 5%);
+  //   cursor: pointer;
+  //   transition: background-color 0.25s ease;
+  //   &::after {
+  //       opacity: .22;
+  //   }
+  // }
 }
 
 .btn-product-browse__text {
   display: inline-block;
   padding-right: 6px;
+  font-family: $font-family-base-bold;
+  font-weight: 700;
 }
 
 .btn-product-browse__arr {

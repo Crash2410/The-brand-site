@@ -46,7 +46,7 @@
   }
 
   .subscribe-blog__text {
-    font-family: Lato;
+    font-family: $font-family-base-italic;
     color: rgba(34, 34, 36, 0.67);
     font-size: 16px;
     font-style: italic;
@@ -56,8 +56,9 @@
 
   .subscribe-blog__author_accent {
     color: $accent;
+    font-family: $font-family-base-bold;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 16px;
     margin-top: 16px;
     text-align: left;
@@ -66,6 +67,7 @@
 
   .subscribe-blog__author {
     color: #222224;
+    font-family: $font-family-base-light;
     font-size: 12px;
     font-weight: 300;
     line-height: 12px;
@@ -121,7 +123,7 @@
 }
 
 .subscribe-form {
-  max-width: 386px;
+  width: auto;
   display: block;
   height: 38px;
   line-height: 38px;
@@ -129,7 +131,7 @@
 
 .subscribe-form__input {
   display: inline-block;
-  max-width: 282px;
+  width: auto;
 
   input {
     color: rgba(34, 34, 36, 0.67);
@@ -149,7 +151,7 @@
 }
 
 .subscribe-form__submit-btn {
-  max-width: 104px;
+  width: auto;
   height: 100%;
   display: inline-block;
   vertical-align: top;
@@ -165,11 +167,26 @@
     border-bottom-right-radius: 23px;
     border-top-right-radius: 23px;
     background-color: $accent;
-    &:hover {
-      background-color: darken($accent, 6%);
-      color: fff;
-      transition: background-color 0.25s ease;
-    }
+    &:focus,
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      &:hover {
+        background-color: lighten($accent, 5%);
+        cursor: pointer;
+        &::after {
+          opacity: .22;
+        }
+      }
+
+      &:active {
+        background-color: darken($accent, 5%);
+        &::after {
+          opacity: .32;
+        }
+      }
 
     a {
       text-decoration: none;

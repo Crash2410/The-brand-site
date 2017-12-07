@@ -44,13 +44,14 @@
   .banner__text1 {
     display: inline-block;
     width: auto;
+    height: auto;
     font-size: 53.62px;
     font-weight: 600;
     text-align: left;
     color: #ffff;
     text-transform: uppercase;
     position: absolute;
-    top: 146px;
+    top: 136px;
     left: 40px;
     z-index: 14;
   }
@@ -67,19 +68,19 @@
     text-align: left;
     text-transform: uppercase;
     position: absolute;
-    top: calc(146px + 53.62px + 0.25*32.17px);
+    top: 208px;
     left: 40px;
     z-index: 14;
   }
 
   .feature-description {
     width: 373px;
-    height: 529px;
+    height: auto;
     vertical-align: top;
     display: inline-block;
-    margin-top: 113px;
+    margin-top: 112px;
     padding-left: 114px;
-    padding-right: 43px;
+    padding-right: 42px;
     padding-top: 50px;
     background-color: #222224;
     position: relative;
@@ -88,8 +89,9 @@
 
   .feature-description__title-1 {
     color: #fbfbfb;
+    font-family: $font-family-base-bold;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     text-align: left;
     margin-bottom: 15px;
     position: relative;
@@ -109,8 +111,9 @@
 
   .feature-description__title-2 {
     color: #fbfbfb;
+    font-family: $font-family-base-bold;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     text-align: left;
     margin-top: 40px;
     margin-bottom: 15px;
@@ -131,7 +134,8 @@
   .feature-description__title-3 {
     color: #fbfbfb;
     font-size: 20px;
-    font-weight: 600;
+    font-family: $font-family-base-bold;
+    font-weight: 700;
     text-align: left;
     margin-top: 40px;
     margin-bottom: 15px;
@@ -152,6 +156,7 @@
   .feature-description__text {
     color: #fbfbfb;
     text-align: left;
+    font-family: $font-family-base-light;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;

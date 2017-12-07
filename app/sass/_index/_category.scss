@@ -46,15 +46,17 @@
 
 .category-label-black {
   text-transform: uppercase;
+  font-family: $font-family-base-black;
   font-size: 18px;
   font-weight: 900;
   color: #222222;
 }
 
 .category-label-accent {
-  text-transform: uppercase;
-  color: #f16d7f;
+  font-family: $font-family-base-black;
   font-size: 30px;
   font-weight: 900;
+  text-transform: uppercase;
+  color: $accent;
 }
 // -- End of `category`

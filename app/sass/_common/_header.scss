@@ -14,6 +14,7 @@
   }
   &__name {
     color: #222;
+    font-family: $font-family-base-light;
     font-size: 27px;
     font-weight: 300;
     line-height: 27px;
@@ -26,6 +27,7 @@
     margin-left: -4px;
     margin-top: 10px;
     &-accent {
+      font-family: $font-family-base-black;
       color: $accent;
       font-weight: 800;
     }
@@ -119,11 +121,12 @@
       }
 
       &-dropdown-menu {
-        width: 87px;
+        width: 88px;
         height: 100%;
         display: table-cell;
         position: relative;
-        padding-left: 12px;
+        padding-left: 10px;
+        padding-right: 4px;
         padding-right: 0;
         vertical-align: middle;
         list-style: none;
@@ -155,14 +158,13 @@
           }
 // Label for mega menu
           label {
-            display: block;
+            display: inline-block;
             color: #222;
             cursor: pointer;
           }
           .dropdown-toggle-arrow-down {
             display: inline-block;
-            margin: 0;
-            padding: 1px;
+            margin-left: 4px;
             vertical-align: middle;
             background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
              @include triangle($t-width:8px, $t-height:5px, $bgc:#838383, $angle:180deg);
@@ -366,9 +368,9 @@
         margin-left: 19px;
       }
       .btn-account {
-        padding: 12px 0;
+        padding: 10px 14px;
         font-size: 15px;
-        width: 130px;
+        width: auto;
         // Version Fa - font awesome
         // .fa-caret-down {
         //  color: #fff;
@@ -379,8 +381,7 @@
         //  padding-right: 0px;
         // }
         .arrow-drop-down-white {
-          width: 9px;
-          height: 9px;
+          margin-left: 4px;
           display: inline-block;
           vertical-align: middle;
           @include triangle($t-width:9px, $t-height:5px, $bgc:#fff, $angle:180deg);

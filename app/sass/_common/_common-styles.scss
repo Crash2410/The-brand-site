@@ -55,7 +55,7 @@ body {
   position: relative;
   line-height: $line-height-base;
   font-family: $font-family-sans-serif;
-  // overflow-x: hidden;  // Временно отключено для отладки
+  overflow-x: hidden;  // Временно отключено для отладки
   opacity: 1;
 }
 
@@ -87,12 +87,47 @@ body {
 }
 
 // Button all on page
-.button {
+// theme normal dark background
+.button_theme-base {
   display: inline-block;
   border: none;
   color: #fff;
   text-decoration: none;
   background-color: $accent;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  outline: none;
+  transition: background-color .1s ease .1s;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: lighten($accent, 5%);
+    cursor: pointer;
+    &::after {
+      opacity: .22;
+    }
+  }
+
+  &:active {
+    background-color: darken($accent, 5%);
+    &::after {
+      opacity: .32;
+    }
+  }
+}
+// theme light background, color $accent
+.button_theme-light {
+  display: inline-block;
+  border: 1px solid $accent;
+  color: $accent;
+  text-decoration: none;
+  background-color: #fff;
   font-weight: 400;
   text-align: center;
   position: relative;
@@ -107,12 +142,47 @@ body {
 
   &:hover {
     background-color: lighten($accent, 5%);
+    cursor: pointer;
     &::after {
       opacity: .22;
     }
   }
 
   &:active {
+    background-color: darken($accent, 5%);
+    &::after {
+      opacity: .32;
+    }
+  }
+}
+// theme light background color #4a4a4a
+.button_theme-light-grey {
+  display: inline-block;
+  border: 1px solid $btn-border-gray;
+  color:  #4a4a4a;
+  text-decoration: none;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: relative;
+  outline: none;
+  transition: background-color .1s ease .1s;
+
+  &:focus,
+  &:hover {
+    color: #fff;
+    background-color: lighten($accent, 5%);
+    cursor: pointer;
+    &::after {
+      opacity: .22;
+    }
+  }
+
+  &:active {
+    color: #fff;
     background-color: darken($accent, 5%);
     &::after {
       opacity: .32;
