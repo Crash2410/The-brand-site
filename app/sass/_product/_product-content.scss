@@ -303,7 +303,7 @@
       border-top-color: $accent;
     }
     select:disabled ~ .select_arrow {
-      border-top-color: #CCCCCC;
+      border-top-color: #ccc;
     }
   }
 // End of sort-form__select-sort-by
@@ -454,26 +454,44 @@
 .product-btn {
   display: block;
   width: 148px;
-  height: 44px;
+  height: auto;
   margin-top: 46px;
   margin-left: auto;
-  padding: 14px 46px;
+  padding: 12px 46px;
+  color: $accent;
   vertical-align: middle;
   border: 1px solid $accent;
   border-radius: 2px;
   background-color: #FFF;
-    &:hover {
-      background-color: #f8f3f4;
-      transition: background-color .2s ease .2s;
-    }
-
+  outline: none;
+  transition: background-color .1s ease .1s;
   a {
     color: $accent;
     display: block;
     width: 100%;
     height: auto;
     text-decoration: none;
-
+  }
+  &:hover {
+    background-color: lighten($accent, 5%);
+    cursor: pointer;
+    &::after {
+      opacity: .22;
+    }
+  }
+  &:hover a {
+    color: #fff;
+    font-weight: bold;
+  }
+  &:active {
+    background-color: darken($accent, 5%);
+    &::after {
+      opacity: .32;
+    }
+  }
+  &:active a {
+    color: #fff;
+    font-weight: bold;
   }
 }
 // End of button View All
