@@ -1,0 +1,115 @@
+.checkout-panel {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 88px 0 90px 0;
+
+  &-header {   
+    padding-bottom: 20px;
+    border-bottom: 1px solid $panel-header-border;
+
+    summary {
+      outline: none;
+      &::-webkit-details-marker {
+        display: none;
+      }
+      li:hover {
+        cursor: pointer;
+        background-color: rgba(0,0,0,.01);
+      }
+    }
+
+    &__name {
+      font-size: 16px;
+      color: #222222;
+      font-family: "LatoLatinBold";
+      font-weight: 700;
+      padding-bottom: 30px;
+      text-transform: uppercase;
+      color: #222222;
+      list-style-type: decimal-leading-zero;
+      outline: none;
+    }
+
+    .register {
+      padding-left: 30px; 
+
+      &__title {
+        padding-bottom: 12px;
+        font-size: 13px;
+        color: #222222;
+        font-family: "LatoLatinRegular";
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      &__text {
+        font-size: 13px;
+        color: #b3b2b2;
+        font-family: "LatoLatinRegular";
+        padding-bottom: 28px;
+      }
+
+      .register__input {
+        margin-bottom: 16px; 
+        .radio {
+          vertical-align: top;
+          margin: 0 3px 0 0;
+          width: 17px;
+          height: 17px;
+
+          & + label {
+            cursor: pointer;
+          }
+
+          &:not(checked) {  /* Прячем оригинальный radio. */
+            position: absolute;
+            opacity: 0;
+
+            & + label {
+              position: relative;
+              padding: 0 0 0 28px;  // left place for radio
+
+                &:before {
+                  content: '';
+                  position: absolute;
+                  top: 0px;
+                  left: 4px;
+                  width: 13px;
+                  height: 13px;
+                  border: 1px solid rgb(204, 203, 203);
+                  border-radius: 50%;
+                  background: #fff;                  
+                }
+
+                &:after {
+                  content: '';
+                  position: absolute;
+                  top: 2px;
+                  left: 6px;
+                  width: 8px;
+                  height: 8px;
+                  border-radius: 50%;
+                  background:  lighten($accent, .5);                                    
+                  box-shadow: inset 0 .5px .5px rgba(0,0,0,.1);
+                  opacity: 0;
+                  transition: opacity .3s ease .1s;
+                }
+              }
+            }
+            // Checked
+            &:checked + label:after {  /* Change opacity if checked  */
+              opacity: 1;
+            }
+            &:focus + label:before {
+              box-shadow: 0 0 0 3px rgba(204, 133, 133, 0.1);
+            }
+          }  // End of .radio
+
+
+        }       
+      }
+  }
+
+}  // End .checkout-panel-header
+
+

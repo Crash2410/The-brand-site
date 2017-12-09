@@ -155,192 +155,35 @@
             </div>
         </section>
     </div><!--/ bread-crumbs -->
-    <div class="container container-theme"><!-- Begin container of `product detail` -->
-      <section class="details-panel"><!-- details-panel -->
-        <div class="details-panel-header"><!-- details-panel-header -->
-          <div class="details-panel-header__name">
-            Product details
-          </div>
-          <div class="details-panel-header__price">
-            Unite price
-          </div>
-          <div class="details-panel-header__quantity">
-            Quantity
-          </div>
-          <div class="details-panel-header__shipping">
-            Shipping
-          </div>
-          <div class="details-panel-header__subtotal">
-            Subtotal
-          </div>
-          <div class="details-panel-header__action">
-            Action
-          </div>
-        </div><!--/ details-panel-header -->
-        <div class="details-panel-item"><!-- details-panel-item. 1st Row. Flex container -->
-          <div class="details-panel-item__description">
-            <img src="img/product_details_01.jpg" width="100" height="115">
-            <div class="product-item">
-              <div class="product-item__name">
-                Mongo people t-shirt
-              </div>
-              <div class="product-item__description">
-                <span class="product-item__description_bold">Color:</span> Red<br>
-                <span class="product-item__description_bold">Size:</span> XII
-              </div>
+    <div class="container container-theme"><!-- Begin container of `checkout detail` -->
+      <section class="checkout-panel"><!-- checkout-panel -->
+        <details class="checkout-panel-header" open><!-- checkout-panel-header -->
+          <summary class="checkout-panel-header__name">
+            <li>Shipping address</li>  
+          </summary>
+          <form action="action-page.php" method="post" name="register"
+            class="register">
+            <div class="register__title">
+              Check as a guest or register  
             </div>
-          </div><!-- End of item__description -->
-          <div class="details-panel-item__price">
-            &#36;150
-          </div>
-          <div class="details-panel-item__quantity">
-            <span class="quantity-border">2</span>
-          </div>
-          <div class="details-panel-item__shipping">
-            Free
-          </div>
-          <div class="details-panel-item__subtotal">
-            &#36;300
-          </div>
-          <div class="details-panel-item__action">
-            <a href="#">&#10006;</a>
-          </div>
-        </div><!--/ details-panel-item 1st Row -->
-        <div class="details-panel-item"><!-- details-panel-item. 2nd Row. Flex container -->
-          <div class="details-panel-item__description">
-            <img src="img/product_details_02.jpg" width="100" height="115">
-            <div class="product-item">
-              <div class="product-item__name">
-                Mongo people t-shirt
+            <div class="register__text">
+                Register with us for future convenience 
               </div>
-              <div class="product-item__description">
-                <span class="product-item__description_bold">Color:</span> Red<br>
-                <span class="product-item__description_bold">Size:</span> XI
-              </div>
+            <div class="register__input">
+                  <input type="radio" name="status" id="guest" value="guest" class="radio">
+                  <label for="guest"> Checkout as guest</label>
             </div>
-          </div><!-- End of item__description -->
-          <div class="details-panel-item__price">
-            &#36;150
-          </div>
-          <div class="details-panel-item__quantity">
-            <span class="quantity-border">2</span>
-          </div>
-          <div class="details-panel-item__shipping">
-            Free
-          </div>
-          <div class="details-panel-item__subtotal">
-            &#36;300
-          </div>
-          <div class="details-panel-item__action">
-           <a href="#">&#10006;</a>
-          </div>
-        </div><!--/ details-panel-item 2nd Row -->
-        <div class="details-panel-item"><!-- details-panel-item. 3d Row. Flex container -->
-          <div class="details-panel-item__description">
-            <img src="img/product_details_03.jpg" width="100" height="115">
-            <div class="product-item">
-              <div class="product-item__name">
-                Mongo people t-shirt
-              </div>
-              <div class="product-item__description">
-                <span class="product-item__description_bold">Color:</span> Red<br>
-                <span class="product-item__description_bold">Size:</span> XI
-              </div>
+            <div class="register__input">          
+                <input type="radio" name="status" id="register" value="register" class="radio">
+                <label for="register">Register</label>              
             </div>
-          </div><!-- End of item__description -->
-          <div class="details-panel-item__price">
-            &#36;150
-          </div>
-          <div class="details-panel-item__quantity">
-            <span class="quantity-border">2</span>
-          </div>
-          <div class="details-panel-item__shipping">
-            Free
-          </div>
-          <div class="details-panel-item__subtotal">
-            &#36;300
-          </div>
-          <div class="details-panel-item__action">
-            <a href="#">&#10006;</a>
-          </div>
-        </div><!--/ details-panel-item 3d Row -->
-        <div class="buttons-section">
-          <button class="btn-action button_theme-light-grey">Clear shopping cart</button>
-          <button class="btn-action button_theme-light-grey">Continue shopping</button>
-        </div><!--/ buttons-section -->
-        <div class="checkout"><!-- checkout -->
-          <div class="column-33 column-33_padding-right-15"><!-- 1st column -->
-            <div class="checkout-title">
-              Shipping address
-            </div>
-            <form class="shopping-form" action="/action-page.php" method="post"
-              name="shopping_form">
-              <div class="shopping-form__select">
-                <select>
-                    <option>--Select--</option>
-                    <option>Saint Petersburg</option>
-                    <option>Moscow</option>
-                    <option>Novosibirsk</option>
-                    <option>Omsk</option>
-                </select>
-                <div class="shopping-form__arrow">
-                </div>
-              </div>
-              <div class="shopping-form__input">
-                <input type="text" name="shopping_form_state"
-                  placeholder="State">
-              </div>
-              <div class="shopping-form__input">
-                <input type="text" name="shopping_form_zip"
-                  placeholder="Postcode / Zip">
-              </div>
-              <button type="submit" class="shopping-form__btn button_theme-light-grey">
-                Get a quote
-              </button>
-            </form>
-          </div><!--/ 1st column -->
-          <div class="column-33 column-33_padding-15"><!-- 2nd column -->
-            <div class="checkout-title">
-              Coupon discount
-            </div>
-            <div class="checkout-text">
-              Enter your coupon code if you have one
-            </div>
-            <form class="shopping-form" action="/action-page.php" method="post"
-              name="shopping_form_coupon">
-              <div class="shopping-form__input shopping-form__input_mb26">
-              <input type="text" name="shopping_form_coupon_code"
-                  placeholder="Coupon code">
-              </div>
-              <button type="submit" class="shopping-form__btn  button_theme-light-grey">
-                Applay coupon
-              </button>
-            </form>
-          </div><!--/ 2nd column -->
-          <div class="column-33 column-33_padding-left-15"><!-- 3d column -->
-            <div class="checkout-sums">
-              <div class="checkout-total">
-                <div class="checkout-total__title">
-                  Sub total
-                </div>
-                <div class="checkout-total__price">
-                  &#36;900
-                </div><br>
-                <div class="checkout-total__btitle">
-                  Grand total
-                </div>
-                <div class="checkout-total__bprice">
-                  &#36;900
-                </div>
-              </div>
-              <button class="checkout-sums__btn">
-                Proceed to checkout
-              </button>
-            </div>
+              
+          </form>
 
-          </div><!--/ 3d column -->
-        </div><!--/ checkout -->
-      </section><!--/ details-panel -->
+        </details><!--/ checkout-panel-header -->
+        
+
+      </section><!--/ checkout-panel -->
 
     </div><!-- End container of `product detail` -->
       <div class="container container-theme"><!-- Begin container of `.subscribe` -->
