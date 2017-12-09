@@ -3641,7 +3641,7 @@ body {
     font-size: 15px;
     width: auto; }
     .header-login .btn-account .arrow-drop-down-white {
-      margin-left: 4px;
+      margin: 4px;
       display: inline-block;
       vertical-align: middle;
       width: 10px;
@@ -3873,10 +3873,10 @@ body {
       top: 18.5px;
       left: -webkit-calc(100% - 14px);
       left: calc(100% - 14px);
-      width: 9px;
+      width: 10px;
       height: 7px;
       border-style: solid;
-      border-width: 0 4px 5px 4px;
+      border-width: 0 4.5px 5px 4.5px;
       border-color: transparent transparent #6f6e6e transparent;
       -webkit-transform: rotateZ(180deg);
           -ms-transform: rotate(180deg);
@@ -3897,10 +3897,10 @@ body {
     top: 18.5px;
     left: -webkit-calc(100% - 14px);
     left: calc(100% - 14px);
-    width: 9px;
+    width: 10px;
     height: 7px;
     border-style: solid;
-    border-width: 0 4px 5px 4px;
+    border-width: 0 4.5px 5px 4.5px;
     border-color: transparent transparent #f16d7f transparent;
     -webkit-transform: rotateZ(0deg);
         -ms-transform: rotate(0deg);
@@ -3918,10 +3918,10 @@ body {
     top: 18.5px;
     left: -webkit-calc(100% - 14px);
     left: calc(100% - 14px);
-    width: 9px;
+    width: 10px;
     height: 7px;
     border-style: solid;
-    border-width: 0 4px 5px 4px;
+    border-width: 0 4.5px 5px 4.5px;
     border-color: transparent transparent #f16d7f transparent;
     -webkit-transform: rotateZ(0deg);
         -ms-transform: rotate(0deg);
@@ -3939,10 +3939,10 @@ body {
     top: 18.5px;
     left: -webkit-calc(100% - 14px);
     left: calc(100% - 14px);
-    width: 9px;
+    width: 10px;
     height: 7px;
     border-style: solid;
-    border-width: 0 4px 5px 4px;
+    border-width: 0 4.5px 5px 4.5px;
     border-color: transparent transparent #f16d7f transparent;
     -webkit-transform: rotateZ(0deg);
         -ms-transform: rotate(0deg);

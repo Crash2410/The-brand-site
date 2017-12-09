@@ -72,7 +72,7 @@
   clear: both;
 }
 
-@mixin triangle($t-width:8px, $t-height:5px, $bgc:#fff, $angle:0deg) {
+@mixin triangle($t-width:9px, $t-height:5px, $bgc:#fff, $angle:0deg) {
     width: ($t-width + 1px);
     height: ($t-height + 2px);
     $tw: $t-width/2;

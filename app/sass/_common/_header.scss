@@ -379,7 +379,7 @@
         //  padding-right: 0px;
         // }
         .arrow-drop-down-white {
-          margin-left: 4px;
+          margin: 4px;
           display: inline-block;
           vertical-align: middle;
           @include triangle($t-width:9px, $t-height:5px, $bgc:#fff, $angle:180deg);
