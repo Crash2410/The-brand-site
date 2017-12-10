@@ -10,17 +10,20 @@
 //  z-index: 10;
 // }
 .features {
-  max-width: 1410px;
-  margin: 0 auto;
-  display: block;
+  max-width: 1140px;
+  width: 100%;
+  margin-top: 112px;
+  margin-bottom: 96px;
+  margin-left: auto;
+  margin-right: auto;  
   text-align: center;
   z-index: 11;
-  margin-bottom: 97px;
+  display: flex;    
 }
 
 .banner {
-  display: inline-block;
-  margin-top: 113px;
+  // display: inline-block;
+  flex-basis:  67.3684%; 
   width: auto;
   height: auto;
   z-index: 12;
@@ -28,7 +31,7 @@
 }
 
 .banner__image {
-  width: 767px;
+  width: 100%;
   height: auto;
   display: inline-block;
   position: relative;
@@ -42,11 +45,12 @@
   }
 
   .banner__text1 {
-    display: inline-block;
+    display: block;
     width: auto;
     height: auto;
+    font-family: $font-family-base-black;
     font-size: 53.62px;
-    font-weight: 600;
+    font-weight: 700;
     text-align: left;
     color: #ffff;
     text-transform: uppercase;
@@ -63,8 +67,9 @@
   .banner__text2 {
     display: block;
     color: #fff;
+    font-family: $font-family-base-black;
     font-size: 32.17px;
-    font-weight: 600;
+    font-weight: 700;
     text-align: left;
     text-transform: uppercase;
     position: absolute;
@@ -74,11 +79,10 @@
   }
 
   .feature-description {
-    width: 373px;
+    flex-basis: 32.6316%;
+    width: 100%;
     height: auto;
-    vertical-align: top;
-    display: inline-block;
-    margin-top: 112px;
+    vertical-align: top;        
     padding-left: 114px;
     padding-right: 42px;
     padding-top: 50px;
@@ -87,13 +91,25 @@
     z-index: 10;
   }
 
+  .feature-flex-column {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: space-around;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+
+  .feature-flex-column__item {
+    flex-basis: 78.8770%;
+  }
+
   .feature-description__title-1 {
     color: #fbfbfb;
     font-family: $font-family-base-bold;
     font-size: 20px;
-    font-weight: 700;
-    text-align: left;
-    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: left;    
     position: relative;
     z-index: 10;
 
@@ -103,7 +119,7 @@
       content: url("../img/car-form.png");
       display: inline-block;
       position: absolute;
-      top: -6px;
+      top: 0;
       left: -76px;
       z-index: 100;
     }
@@ -113,10 +129,8 @@
     color: #fbfbfb;
     font-family: $font-family-base-bold;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: left;
-    margin-top: 40px;
-    margin-bottom: 15px;
     position: relative;
 
     &:before {
@@ -135,10 +149,8 @@
     color: #fbfbfb;
     font-size: 20px;
     font-family: $font-family-base-bold;
-    font-weight: 700;
+    font-weight: 600;
     text-align: left;
-    margin-top: 40px;
-    margin-bottom: 15px;
     position: relative;
 
     &:before {
@@ -162,9 +174,4 @@
     line-height: 24px;
     hyphens: manual;
   }
-
-  .feature-description__text-bottom-m {
-    margin-bottom: 50px;
-  }
-
 // -- End `features` --
