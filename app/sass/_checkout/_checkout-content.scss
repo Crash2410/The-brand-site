@@ -1,7 +1,28 @@
+$margin: 15px;  // Var for margin
+// Abstract class for flex container  
+%l {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-left: -$margin;
+    margin-right: -$margin;
+    padding-left: $margin;
+    padding-right: $margin;
+    > div {
+        margin: $margin;
+    }
+}
+
 .checkout-panel {
-  width: 1140px;
+  @extend %l;
+  width: 1170px;
   margin: 0 auto;
   padding: 88px 0 90px 0;
+
+  .column-half {
+    display: flex;
+    flex-basis: calc(#{50% - #{$margin * 2}});
+  }
 
   &-header {   
     padding-bottom: 20px;
@@ -15,6 +36,7 @@
       li:hover {
         cursor: pointer;
         background-color: rgba(0,0,0,.01);
+        color: lighten(#222, .25);
       }
     }
 
