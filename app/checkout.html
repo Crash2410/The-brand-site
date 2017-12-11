@@ -194,39 +194,56 @@
                 </form>
               </div><!--/ flex-column-50 1st -->
               <div class="flex-column-50"> <!-- flex-column-50 2nd -->
-                <form action="action-page.php" method="post" name="register"
-                class="register">
-                <div class="register__title">
-                  Check as a guest or register  
-                </div>
-                <div class="register__text">
-                    Register with us for future convenience 
+                <form action="action-page02.php" method="post" name="register" class="register_login">
+                  <div class="register__title">
+                    Already registered?  
                   </div>
-                <div class="register__input">
-                    <input type="radio" name="status" id="guest" value="guest" class="radio">
-                    <label for="guest">Checkout as guest</label>
-                    <br>         
-                    <input type="radio" name="status" id="register" value="register" class="radio">
-                    <label for="register">Register</label>              
-                </div>
-                <div class="register__title">
-                    Register and save time! 
-                </div>
-                <div class="register__text">
-                    Register with us for future convenience  
-                </div>
-                <ul class="register__suggestions">
-                  <li>&#187; Fast and easy checkout</li>
-                  <li>&#187; Easy access to your order history and status</li>
-                </ul>
-                <button type="submit" class="button_theme-light-grey button_theme-register">
-                  Continue
-                </button>
-              </form>
+                  <div class="register__text">
+                      Please log in below 
+                  </div>
+                  <div class="register__login">
+                      <label for="email">Email address <span>*</span></label>
+                      <input type="email" name="email" id="email" 
+                        placeholder="example@example.com" required>
+                      <label for="password">Password  <span>*</span></label>                      
+                      <input type="password" name="password" id="password" required> 
+                      <p>*Required Fields</p>                                  
+                  </div>
+                  <button type="submit" class="button_theme-light-grey button_theme-register">
+                    Log in
+                  </button>
+                  <div class="register__inline-text">
+                    <a href="">Forget Password?</a> 
+                  </div>
+                </form>
               </div><!--/ flex-column-50 2nd -->
             </div>  
           </details><!--/ checkout-panel-header -->      
-
+          <details class="checkout-panel-header"><!-- checkout-panel-header -->
+            <summary class="checkout-panel-header__name">
+              <li value="2">Billing information</li> 
+            </summary>
+          </details>
+          <details class="checkout-panel-header"><!-- checkout-panel-header -->
+            <summary class="checkout-panel-header__name">
+              <li value="3">Shipping information</li> 
+            </summary>
+          </details>
+          <details class="checkout-panel-header"><!-- checkout-panel-header -->
+            <summary class="checkout-panel-header__name">
+              <li value="4">Shipping method</li> 
+            </summary>
+          </details>
+          <details class="checkout-panel-header"><!-- checkout-panel-header -->
+            <summary class="checkout-panel-header__name">
+              <li value="5">Payment method</li> 
+            </summary>
+          </details>
+          <details class="checkout-panel-header"><!-- checkout-panel-header -->
+            <summary class="checkout-panel-header__name">
+              <li value="6">Order review</li> 
+            </summary>
+          </details>
       </section><!--/ checkout-panel -->
 
     </div><!-- End container of `product detail` -->
