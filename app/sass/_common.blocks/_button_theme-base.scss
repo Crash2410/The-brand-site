@@ -1,0 +1,37 @@
+// Button all on page
+// theme normal dark background
+@import "../_vars.scss";
+
+.button_theme-base {
+  display: inline-block;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  background-color: $accent;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  outline: none;
+  transition: background-color .1s ease .1s;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: lighten($accent, 5%);
+    cursor: pointer;
+    &::after {
+      opacity: .22;
+    }
+  }
+
+  &:active {
+    background-color: darken($accent, 5%);
+    &::after {
+      opacity: .32;
+    }
+  }
+}

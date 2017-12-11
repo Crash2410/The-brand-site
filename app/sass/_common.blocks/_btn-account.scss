@@ -1,0 +1,14 @@
+@import "../_mixins/_b-mixins.scss";
+// Button with dropdown triangle
+.btn-account {
+  padding: 10px 14px;
+  font-size: 15px;
+  width: auto;
+
+  .arrow-drop-down-white {
+    margin: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    @include triangle($t-width:9px, $t-height:5px, $bgc:#fff, $angle:180deg);
+  }
+}

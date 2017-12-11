@@ -1,0 +1,37 @@
+// Button block
+// theme light background, color $accent
+@import "../_vars.scss";
+.button_theme-light-grey {
+  display: inline-block;
+  border: 1px solid $btn-border-gray;
+  color:  #4a4a4a;
+  text-decoration: none;
+  background-color: #fff;
+  font-family: $font-family-base-bold;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: relative;
+  outline: none;
+  transition: background-color .1s ease .1s;
+
+  &:focus,
+  &:hover {
+    color: #fff;
+    background-color: lighten($accent, 5%);
+    cursor: pointer;
+    &::after {
+      opacity: .22;
+    }
+  }
+
+  &:active {
+    color: #fff;
+    background-color: darken($accent, 5%);
+    &::after {
+      opacity: .32;
+    }
+  }
+}
