@@ -3838,7 +3838,39 @@ body {
       .bread-crumbs__content .b-c .b-c__item_active > a {
         color: #f16d7f; }
 
-.checkout-panel {
+.button_theme-light-grey {
+  display: inline-block;
+  border: 1px solid #eaeaea;
+  color: #4a4a4a;
+  text-decoration: none;
+  background-color: #fff;
+  font-family: "LatoLatinBold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: relative;
+  outline: none;
+  -webkit-transition: background-color .1s ease .1s;
+  -o-transition: background-color .1s ease .1s;
+  transition: background-color .1s ease .1s; }
+  .button_theme-light-grey:focus, .button_theme-light-grey:hover {
+    color: #fff;
+    background-color: #f38493;
+    cursor: pointer; }
+    .button_theme-light-grey:focus::after, .button_theme-light-grey:hover::after {
+      opacity: .22; }
+  .button_theme-light-grey:active {
+    color: #fff;
+    background-color: #ef566b; }
+    .button_theme-light-grey:active::after {
+      opacity: .32; }
+
+.button_theme-register {
+  padding: 1.3571em 3.8571em; }
+
+.checkout-panel .flex-column-100 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3852,14 +3884,14 @@ body {
   margin-right: -15px;
   padding-left: 15px;
   padding-right: 15px; }
-  .checkout-panel > div {
+  .checkout-panel .flex-column-100 > div {
     margin: 15px; }
 
 .checkout-panel {
   width: 1170px;
   margin: 0 auto;
   padding: 88px 0 90px 0; }
-  .checkout-panel .column-half {
+  .checkout-panel .flex-column-50 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3869,7 +3901,7 @@ body {
             flex-basis: calc(50% - 30px); }
   .checkout-panel-header {
     padding-left: 12px;
-    padding-bottom: 20px;
+    padding-bottom: 78px;
     border-bottom: 1px solid #eaeaea; }
     .checkout-panel-header summary {
       outline: none; }
@@ -3882,7 +3914,7 @@ body {
     .checkout-panel-header__name {
       font-size: 16px;
       color: #222222;
-      font-family: "LatoLatinBold";
+      font-family: "LatoLatinBold", sans-serif;
       font-weight: 700;
       padding-bottom: 30px;
       text-transform: uppercase;
@@ -3892,26 +3924,29 @@ body {
     .checkout-panel-header .register {
       padding-left: 30px; }
       .checkout-panel-header .register__title {
-        padding-bottom: 12px;
+        padding-bottom: 10px;
         font-size: 13px;
         color: #222222;
-        font-family: "LatoLatinRegular";
+        font-family: "LatoLatinRegular", sans-serif;
         text-align: left;
         text-transform: uppercase; }
       .checkout-panel-header .register__text {
         font-size: 13px;
         color: #b3b2b2;
-        font-family: "LatoLatinRegular";
-        padding-bottom: 28px; }
+        font-family: "LatoLatinRegular", sans-serif; }
       .checkout-panel-header .register .register__input {
-        margin-bottom: 16px; }
+        margin: 30px 0; }
         .checkout-panel-header .register .register__input .radio {
           vertical-align: top;
           margin: 0 3px 0 0;
           width: 17px;
           height: 17px; }
           .checkout-panel-header .register .register__input .radio + label {
-            cursor: pointer; }
+            cursor: pointer;
+            text-transform: uppercase;
+            font-family: "LatoLatinRegular", sans-serif;
+            font-size: 12px;
+            color: #222222; }
           .checkout-panel-header .register .register__input .radio:not(checked) {
             /* Прячем оригинальный radio. */
             position: absolute;
@@ -3924,8 +3959,8 @@ body {
                 position: absolute;
                 top: 0px;
                 left: 4px;
-                width: 13px;
-                height: 13px;
+                width: 14px;
+                height: 14px;
                 border: 1px solid #cccbcb;
                 -webkit-border-radius: 50%;
                         border-radius: 50%;
@@ -3933,8 +3968,8 @@ body {
               .checkout-panel-header .register .register__input .radio:not(checked) + label:after {
                 content: '';
                 position: absolute;
-                top: 2px;
-                left: 6px;
+                top: 3px;
+                left: 7px;
                 width: 8px;
                 height: 8px;
                 -webkit-border-radius: 50%;
@@ -3952,6 +3987,14 @@ body {
           .checkout-panel-header .register .register__input .radio:focus + label:before {
             -webkit-box-shadow: 0 0 0 3px rgba(204, 133, 133, 0.1);
                     box-shadow: 0 0 0 3px rgba(204, 133, 133, 0.1); }
+    .checkout-panel-header .register__suggestions {
+      list-style: none;
+      padding: 30px 0;
+      margin: 0; }
+      .checkout-panel-header .register__suggestions li {
+        color: #b3b2b2;
+        font-size: 13px;
+        line-height: 28px; }
 
 .subscribe {
   z-index: 1;

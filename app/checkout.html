@@ -156,43 +156,77 @@
         </section>
     </div><!--/ bread-crumbs -->
     <div class="container container-theme"><!-- Begin container of `checkout detail` -->
-      <section class="checkout-panel"><!-- checkout-panel -->
-        <div class="column-half">       
+      <section class="checkout-panel"><!-- checkout-panel -->               
           <details class="checkout-panel-header" open><!-- checkout-panel-header -->
             <summary class="checkout-panel-header__name">
-            <li value="1">Shipping address</li> 
+              <li value="1">Shipping address</li> 
             </summary>
-            <form action="action-page.php" method="post" name="register"
-              class="register">
-              <div class="register__title">
-                Check as a guest or register  
-              </div>
-              <div class="register__text">
-                  Register with us for future convenience 
+            <div class="flex-column-100">
+              <div class="flex-column-50">
+                <form action="action-page.php" method="post" name="register"
+                  class="register">
+                  <div class="register__title">
+                    Check as a guest or register  
+                  </div>
+                  <div class="register__text">
+                      Register with us for future convenience 
+                    </div>
+                  <div class="register__input">
+                      <input type="radio" name="status" id="guest" value="guest" class="radio">
+                      <label for="guest">Checkout as guest</label>
+                      <br>         
+                      <input type="radio" name="status" id="register" value="register" class="radio">
+                      <label for="register">Register</label>              
+                  </div>
+                  <div class="register__title">
+                      Register and save time! 
+                  </div>
+                  <div class="register__text">
+                      Register with us for future convenience  
+                  </div>
+                  <ul class="register__suggestions">
+                    <li>&#187; Fast and easy checkout</li>
+                    <li>&#187; Easy access to your order history and status</li>
+                  </ul>
+                  <button type="submit" class="button_theme-light-grey button_theme-register">
+                    Continue
+                  </button>
+                </form>
+              </div><!--/ flex-column-50 1st -->
+              <div class="flex-column-50"> <!-- flex-column-50 2nd -->
+                <form action="action-page.php" method="post" name="register"
+                class="register">
+                <div class="register__title">
+                  Check as a guest or register  
                 </div>
-              <div class="register__input">
+                <div class="register__text">
+                    Register with us for future convenience 
+                  </div>
+                <div class="register__input">
                     <input type="radio" name="status" id="guest" value="guest" class="radio">
-                    <label for="guest"> Checkout as guest</label>
-              </div>
-              <div class="register__input">          
-                  <input type="radio" name="status" id="register" value="register" class="radio">
-                  <label for="register">Register</label>              
-              </div>
-              <div class="register__title">
-                  Register and save time! 
-              </div>
-              <div class="register__text">
-                  Register with us for future convenience  
-              </div>
-              
-            </form>
+                    <label for="guest">Checkout as guest</label>
+                    <br>         
+                    <input type="radio" name="status" id="register" value="register" class="radio">
+                    <label for="register">Register</label>              
+                </div>
+                <div class="register__title">
+                    Register and save time! 
+                </div>
+                <div class="register__text">
+                    Register with us for future convenience  
+                </div>
+                <ul class="register__suggestions">
+                  <li>&#187; Fast and easy checkout</li>
+                  <li>&#187; Easy access to your order history and status</li>
+                </ul>
+                <button type="submit" class="button_theme-light-grey button_theme-register">
+                  Continue
+                </button>
+              </form>
+              </div><!--/ flex-column-50 2nd -->
+            </div>  
+          </details><!--/ checkout-panel-header -->      
 
-          </details><!--/ checkout-panel-header -->
-        
-        </div><!--/ column-half 1st --> 
-        <div class="column-half"> <!-- column-half 2nd -->
-
-        </div><!--/ column-half 2nd -->
       </section><!--/ checkout-panel -->
 
     </div><!-- End container of `product detail` -->
@@ -230,7 +264,7 @@
                   <input type="email" placeholder="Enter Your Email">
                 </div>
                 <div class="subscribe-form__submit-btn">
-                  <button type="submit"><a href="#">Subscribe</a></button>
+                  <button type="submit">Subscribe</button>
                 </div>
               </form>
             </div>
