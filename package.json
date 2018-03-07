@@ -10,7 +10,9 @@
   "author": "Kalnynsh",
   "license": "ISC",
   "babel": {
-    "presets": ["env"]
+    "presets": [
+      "env"
+    ]
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
