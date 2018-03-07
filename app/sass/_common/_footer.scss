@@ -3,11 +3,11 @@
 .b-footer-top {
   max-width: 1140px;
   height: auto;
-    margin: 0 auto; // display: flex;
-    display: block;
-    margin-top: 110px;
-    margin-bottom: 90px;
-  }
+  margin: 0 auto; // display: flex;
+  display: block;
+  margin-top: 110px;
+  margin-bottom: 90px;
+}
 
 // Star of Footer text 1st column
 .footer-text {
@@ -46,7 +46,7 @@
       color: #898989;
       &:hover {
         color: $accent;
-        transition: color .1s ease;
+        transition: color 0.1s ease;
       }
     }
   }
@@ -109,12 +109,12 @@
   display: inline-block;
   vertical-align: top;
   background-color: #fff;
-  background-image: url("../../img/socials-icons-sprite.png");
+  background-image: url("img/socials-icons-sprite.png");
   background-position: -7px -1px;
   &:hover {
     background-color: $accent;
     color: #fff;
-    background-image: url("../../img/socials-icons-sprite.png");
+    background-image: url("img/socials-icons-sprite.png");
     background-position: -7px -41px;
     transition: background-color 0.2s ease;
   }
@@ -150,12 +150,12 @@
   display: inline-block;
   vertical-align: top;
   background-color: #fff;
-  background-image: url("../../img/socials-icons-sprite.png");
+  background-image: url("img/socials-icons-sprite.png");
   background-position: -43px -1px;
 
   &:hover {
     background-color: $accent;
-    background-image: url("../../img/socials-icons-sprite.png");
+    background-image: url("img/socials-icons-sprite.png");
     background-position: -43px -41px;
     transition: background-color 0.5s ease;
   }
@@ -191,12 +191,12 @@
   display: inline-block;
   vertical-align: top;
   background-color: #fff;
-  background-image: url("../../img/socials-icons-sprite.png");
+  background-image: url("img/socials-icons-sprite.png");
   background-position: -79px -1px;
 
   &:hover {
     background-color: $accent;
-    background-image: url("../../img/socials-icons-sprite.png");
+    background-image: url("img/socials-icons-sprite.png");
     background-position: -79px -41px;
     transition: background-color 0.5s ease;
   }
@@ -233,12 +233,12 @@
   display: inline-block;
   vertical-align: top;
   background-color: #fff;
-  background-image: url("../../img/socials-icons-sprite.png");
+  background-image: url("img/socials-icons-sprite.png");
   background-position: -115px -1px;
 
   &:hover {
     background-color: $accent;
-    background-image: url("../../img/socials-icons-sprite.png");
+    background-image: url("img/socials-icons-sprite.png");
     background-position: -115px -41px;
     transition: background-color 0.5s ease;
   }
@@ -274,12 +274,12 @@
   display: inline-block;
   vertical-align: top;
   background-color: #fff;
-    background-image: url("../../img/socials-icons-sprite.png");
+  background-image: url("img/socials-icons-sprite.png");
   background-position: -151px -1px;
 
   &:hover {
     background-color: $accent;
-    background-image: url("../../img/socials-icons-sprite.png");
+    background-image: url("img/socials-icons-sprite.png");
     background-position: -151px -41px;
     transition: background-color 0.5s ease;
   }
