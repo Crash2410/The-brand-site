@@ -80,6 +80,3 @@
 
   productsGridElem.innerHTML = productsStrMainElem;
 })();
-
-let megaMenuReference = document.querySelector(".mega-menu");
-if (!megaMenuReference) alert("Element megaMenu not found!");

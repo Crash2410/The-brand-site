@@ -30,6 +30,8 @@ gulp.task("js", ["common-js"], function() {
     gulp
       .src([
         "app/libs/jquery/dist/jquery.min.js",
+        "app/libs/popper.js/popper.js",
+        "app/libs/fibe/fibe.js",
         "app/js/common.min.js" // Всегда в конце
       ])
       .pipe(concat("scripts.min.js"))
