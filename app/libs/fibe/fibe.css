@@ -1,0 +1,272 @@
+.fibe-shadow {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  text-align: center;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-y: auto;
+  display: none;
+}
+.fibe-shadow:before {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.fibe-window {
+  width: 100%;
+  max-width: 400px;
+  min-width: 150px;
+  background-color: #fff;
+  border-radius: 7px;
+  opacity: 0;
+  position: relative;
+  top: -200px;
+  padding: 20px 20px 15px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  display: inline-block;
+  -webkit-box-shadow: 0 5px 22px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 22px 0 rgba(0, 0, 0, 0.2);
+  vertical-align: middle;
+}
+.fibe-window .fibe-window-decor {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+  top: -25px;
+  left: -25px;
+  background-color: #4FC3F7;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.fibe-window .fibe-caption {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+  color: #454545;
+  font-size: 18px;
+  word-wrap: break-word;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.fibe-window .fibe-text {
+  margin: 0;
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+  word-wrap: break-word;
+  margin-bottom: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.fibe-window .fibe-text span {
+  font-weight: 700;
+  color: #77b607;
+}
+.fibe-window .fibe-buttons-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: 400;
+}
+.fibe-window .fibe-buttons-row .fibe-button1 {
+  padding: 9px 15px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #4FC3F7;
+  color: #fff;
+  min-width: 60px;
+  text-align: center;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 5px;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+.fibe-window .fibe-buttons-row .fibe-button1:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+.fibe-window .fibe-buttons-row .fibe-button1:hover .button-fibe-shadow {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.fibe-window .fibe-buttons-row .fibe-button1:active .button-fibe-shadow {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.fibe-window .fibe-buttons-row .fibe-button1 .button-fibe-shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1002;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+.fibe-window .fibe-buttons-row .fibe-button1 span {
+  position: relative;
+  z-index: 1003;
+}
+.fibe-window .fibe-buttons-row .fibe-button1.success {
+  background-color: #72c34a;
+}
+.fibe-window .fibe-buttons-row .fibe-button1.error {
+  background-color: #f44336;
+}
+.fibe-window .fibe-buttons-row .fibe-button1.warning {
+  background-color: #FF9800;
+}
+.fibe-window .fibe-buttons-row .fibe-button2 {
+  padding: 9px 15px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #4FC3F7;
+  color: #fff;
+  min-width: 60px;
+  text-align: center;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 5px;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+.fibe-window .fibe-buttons-row .fibe-button2:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+.fibe-window .fibe-buttons-row .fibe-button2:hover .button-fibe-shadow {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.fibe-window .fibe-buttons-row .fibe-button2:active .button-fibe-shadow {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.fibe-window .fibe-buttons-row .fibe-button2 .button-fibe-shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1002;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+.fibe-window .fibe-buttons-row .fibe-button2 span {
+  position: relative;
+  z-index: 1003;
+}
+.fibe-window .fibe-buttons-row .fibe-button2.success {
+  background-color: #72c34a;
+}
+.fibe-window .fibe-buttons-row .fibe-button2.error {
+  background-color: #f44336;
+}
+.fibe-window .fibe-buttons-row .fibe-button2.warning {
+  background-color: #FF9800;
+}
+.fibe-subtitle{
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+}
+.fibe-subtitle span {
+  color: #77b607;
+  font-weight: 700;
+}
+.add-form{
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.add-form input{
+  padding: 3px;
+  text-align: center;
+  width: 50px;
+  border: 1px solid #666;
+  font-size: 16px;
+  outline: none;
+  color: #555;
+  border-radius: 4px;
+}
+.add-form .minus-btn,
+.add-form .plus-btn{
+  color: #666;
+  border-radius: 4px;
+  border: 1px solid #666;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 10px;
+  padding: 7px;
+  font-size: 14px;
+}
+.add-form .minus-btn i,
+.add-form .plus-btn i{
+  line-height: 10px;
+}
+.add-form .minus-btn:hover,
+.add-form .plus-btn:hover{
+  cursor: pointer;
+  color: #444;
+  border-color: #444;
+}
+.add-form .minus-btn:active,
+.add-form .plus-btn:active{
+  color: #901B53;
+  border-color: #901B53;
+}
+.add-form .minus-btn.disable,
+.add-form .plus-btn.disable{
+  opacity: 0.3;
+}
+.add-form .minus-btn.disable:hover,
+.add-form .plus-btn.disable:hover{
+  cursor: default;
+  color: #666;
+}
+.add-form .minus-btn.disable:active,
+.add-form .plus-btn.disable:active{
+  color: #666;
+  border-color: #666;
+}
+.add-form .minus-btn{
+  margin-left: 0;
+}
