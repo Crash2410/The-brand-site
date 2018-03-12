@@ -22,7 +22,8 @@ gulp.task("common-js", function() {
     .pipe(concat("common.min.js"))
     .pipe(babel())
     .pipe(uglify())
-    .pipe(gulp.dest("app/js"));
+    .pipe(gulp.dest("app/js"))
+    .on("error", notify.onError());
 });
 
 gulp.task("js", ["common-js"], function() {
