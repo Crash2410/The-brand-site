@@ -1,8 +1,5 @@
-// $(function() {
-//   // jQuery code
-// });
-
-(function() {
+// Generate products makup with content
+(function () {
   function generateProducts() {
     const productArray = [
       "Mongo people t-short",
@@ -34,7 +31,9 @@
       "Knit Top",
       "Pullover"
     ];
-    let data = { products: [] };
+    let data = {
+      products: []
+    };
 
     const min = 13;
     const max = 1033;
@@ -48,7 +47,12 @@
       let rnum = Math.floor(minImg + Math.random() * (maxImg + 1 - minImg));
       let urlP = `img/item-${rnum}.jpg`;
 
-      data.products.push({ id: i, name: name, price: price, url: urlP });
+      data.products.push({
+        id: i,
+        name: name,
+        price: price,
+        url: urlP
+      });
     }
     return data;
   }
