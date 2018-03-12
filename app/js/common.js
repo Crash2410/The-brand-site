@@ -1,5 +1,5 @@
 // Generate products makup with content
-(function () {
+(function() {
   function generateProducts() {
     const productArray = [
       "Mongo people t-short",
@@ -84,3 +84,10 @@
 
   productsGridElem.innerHTML = productsStrMainElem;
 })();
+// Update current Year
+window.onload = function() {
+  let now = new Date();
+  let currentYear = now.getFullYear();
+  let currentYearElem = document.getElementById("current-year");
+  currentYearElem.textContent = currentYear;
+};
