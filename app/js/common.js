@@ -254,12 +254,12 @@ $(".product").on("click", function() {
       $(".minus-btn").removeClass("disable");
     }
 
-    console.log(
-      "After Plus current Item Amount: " +
-        cart._item._currentItemAmount +
-        " input: " +
-        $(".items-to-add-val").val()
-    );
+    // console.log(
+    //   "After Plus current Item Amount: " +
+    //     cart._item._currentItemAmount +
+    //     " input: " +
+    //     $(".items-to-add-val").val()
+    // );
   });
 
   // Handler for 'blur' on '.items-to-add-val', check Number of cart._item._currentItemAmount
