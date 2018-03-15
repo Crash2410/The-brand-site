@@ -1,10 +1,7 @@
 <h1>E-shop The Brand</h1>
-<p>First stage of development online store.</p>
-
-<!-- <p>
-	<img src="" alt="Preview image">
-</p> -->
-
+<p>Next step of development online store.</p>
+<p>Added javascript for handling the Cart</p>
+<p>Used json-server for handling AJAX</p>
 <p>Author: 
 	<a href="https://github.com/kalnynsh/" target="_blank">
 		Kalnynsh DA
