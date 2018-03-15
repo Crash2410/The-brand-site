@@ -137,8 +137,7 @@ Cart.prototype.headerCartRender = function() {
       var totalSum = 0;
       var totalAmount = 0;
 
-      console.log(result);
-
+      // console.log(result);
       result.forEach(function(item, index) {
         subSum = parseInt(item.quantity) * parseFloat(item.price);
         totalSum += subSum;
