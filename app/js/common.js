@@ -121,9 +121,12 @@ Cart.prototype.addToStorage = function(item) {
   }
   return;
 };
+// Hiding Cart text
+$(".header-login .cart-amount").hide();
+$(".header-login .cart-sum").hide();
 /**
  * headerCartRender - отрисовка содержимого
- * корзины, по факту  запроса
+ * корзины, по факту GET AJAX запроса
  * @return {[type]} [description]
  */
 Cart.prototype.headerCartRender = function() {
@@ -140,8 +143,12 @@ Cart.prototype.headerCartRender = function() {
         totalSum += subSum;
         totalAmount += parseInt(item.quantity);
       });
-      $(".cart-amount").text("Total amount: " + totalAmount);
-      $(".cart-sum").text("Total sum: $" + totalSum);
+      $(".cart-amount")
+        .show()
+        .text("Total amount: " + totalAmount + ";");
+      $(".cart-sum")
+        .show()
+        .text("Total sum: $" + totalSum);
     } else {
       console.log("Server not response");
     }
@@ -165,9 +172,8 @@ $(".product").on("click", function() {
     .text()
     .trim()
     .slice(1);
+  cart._item._currentItemAmount = $(".items-to-add-val").val();
   cart.setNextCartId();
-
-  console.log(cart._item);
 
   // Генерация модульного окна
   // Generate wrap with -/+ input element for dialog window
@@ -229,7 +235,7 @@ $(".product").on("click", function() {
               var message = $("<span>").text("Added! ");
               var wrap = $("<div>")
                 .append(message)
-                .append(data.quantity + " piece`s in cart.");
+                .append(data.quantity + " piece`s to cart.");
 
               // Displaying 'success' dialog window
               fibe(addedName, "success", false, {
